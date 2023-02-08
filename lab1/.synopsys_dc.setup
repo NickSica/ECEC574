@@ -1,0 +1,35 @@
+
+###### DC Synthesis Script #######
+
+## Give the path to the verilog files and define the WORK directory
+
+lappend search_path ./src/
+define_design_lib WORK -path "work"
+
+## Define the library location
+set link_library [ list \
+	/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db \
+	/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db \
+	/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db \
+]
+
+set target_library [ list \
+	/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db \
+]
+
+## read the verilog files
+analyze -library WORK -format verilog [list fifo.v ]
+
+#elaborate -architecture verilog -library WORK FIFO
+elaborate FIFO
+
+link
+ 
+check_design
+
+write_sdc const/fifo.sdc
+
+write -hier -f verilog -output outputs/fifo.v
+write -hier -f ddc -output outputs/fifo.ddc
+
+exit

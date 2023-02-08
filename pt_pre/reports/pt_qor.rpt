@@ -1,0 +1,69 @@
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+****************************************
+Report : qor
+Design : FIFO
+Version: L-2016.06-SP3-1
+Date   : Wed Feb  1 13:03:02 2023
+****************************************
+
+  Timing Path Group '**async_default**' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                   15.05
+  Critical Path Slack:                     0.05
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'ideal_clock1' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            4
+  Critical Path Length:                    7.00
+  Critical Path Slack:                     8.04
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group '**async_default**' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            0
+  Critical Path Length:                    5.24
+  Critical Path Slack:                     5.02
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'ideal_clock1' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                    0.24
+  Critical Path Slack:                     0.15
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                    5
+  Hierarchical Port Count:                  386
+  Leaf Cell Count:                          267
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                 232.25
+  Total cell area:                      1115.95
+  Design Area:                          1348.20
+  Area Cost:                           -1348.20
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:             1266
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

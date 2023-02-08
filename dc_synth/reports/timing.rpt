@@ -1,0 +1,2564 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][20]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U55/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][20]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][20]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][19]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U54/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][19]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][19]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][18]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U53/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][18]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][18]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][17]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U52/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][17]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][17]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][16]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U51/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][16]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][16]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][15]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U50/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][15]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][15]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][14]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U49/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][14]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][14]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][13]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U48/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][13]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][13]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][12]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U47/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][12]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][12]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][11]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U46/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][11]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][11]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][10]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U45/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][10]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][10]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U58/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][31]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][31]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][30]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U57/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][30]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][30]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  FInN (in)                                               0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)                            0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)                              0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                               0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                               0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)                              0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                                3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                                 4.65       9.33 r
+  memblk/U56/Y (AO22X1_RVT)                               3.96      13.29 r
+  memblk/FIFO_reg[3][29]/D (DFFX1_RVT)                    0.01      13.30 r
+  data arrival time                                                 13.30
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[3][29]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][9]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U5/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U44/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][9]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][9]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][8]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U43/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][8]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][8]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U42/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][7]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][7]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U41/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][6]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][6]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U40/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][5]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][5]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+  Startpoint: FInN (input port clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  FInN (in)                                0.00       0.10 r
+  memblk/writeN (FIFO_MEM_BLK)             0.00       0.10 r
+  memblk/U136/Y (NOR4X1_RVT)               0.53       0.63 f
+  memblk/U86/Y (AND4X1_RVT)                0.10       0.74 f
+  memblk/U85/Y (AND4X1_RVT)                0.13       0.87 f
+  memblk/U84/Y (NAND3X0_RVT)               0.36       1.23 r
+  memblk/U17/Y (INVX1_RVT)                 3.45       4.68 f
+  memblk/U6/Y (INVX1_RVT)                  4.65       9.33 r
+  memblk/U39/Y (AO22X1_RVT)                3.96      13.29 r
+  memblk/FIFO_reg[3][4]/D (DFFX1_RVT)      0.01      13.30 r
+  data arrival time                                  13.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[3][4]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.30
+  -----------------------------------------------------------
+  slack (MET)                                         1.74
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][24]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U75/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][24]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][24]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][23]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U74/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][23]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][23]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][22]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U73/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][22]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][22]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][21]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U72/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][21]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][21]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U82/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][31]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][31]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][30]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U81/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][30]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][30]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U80/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][29]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][29]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U79/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][28]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][28]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][27]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U78/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][27]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][27]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][26]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U77/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][26]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][26]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][25]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U76/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][25]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][25]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][11]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U62/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][11]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][11]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][10]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U61/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][10]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][10]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][9]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)         0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                 0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)               0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                 3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                  4.65       9.30 r
+  memblk/U60/Y (AO22X1_RVT)                3.96      13.26 r
+  memblk/FIFO_reg[2][9]/D (DFFX1_RVT)      0.01      13.27 r
+  data arrival time                                  13.27
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[2][9]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.27
+  -----------------------------------------------------------
+  slack (MET)                                         1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][8]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)         0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                 0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)               0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                 3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                  4.65       9.30 r
+  memblk/U59/Y (AO22X1_RVT)                3.96      13.26 r
+  memblk/FIFO_reg[2][8]/D (DFFX1_RVT)      0.01      13.27 r
+  data arrival time                                  13.27
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  memblk/FIFO_reg[2][8]/CLK (DFFX1_RVT)
+                                           0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                 -13.27
+  -----------------------------------------------------------
+  slack (MET)                                         1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][20]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U71/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][20]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][20]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][19]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U70/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][19]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][19]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][18]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U69/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][18]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][18]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][17]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U68/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][17]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][17]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][16]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U7/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U67/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][16]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][16]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[28] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U240/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[28] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[28] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[27] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U238/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[27] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[27] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[25] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U234/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[25] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[25] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[20] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U224/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[20] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[20] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[16] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U216/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[16] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[16] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[15] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U214/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[15] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[15] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[14] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U212/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[14] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[14] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[13] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U210/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[13] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[13] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[12] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U208/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[12] (FIFO_MEM_BLK)       0.00       9.39 r
+  F_Data[12] (out)                         0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[2] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U14/Y (INVX1_RVT)                 5.82       6.97 f
+  memblk/U4/Y (INVX1_RVT)                  0.07       7.04 r
+  memblk/U188/Y (AO221X1_RVT)              2.35       9.39 r
+  memblk/data_out[2] (FIFO_MEM_BLK)        0.00       9.39 r
+  F_Data[2] (out)                          0.00       9.40 r
+  data arrival time                                   9.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.40
+  -----------------------------------------------------------
+  slack (MET)                                         5.60
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[31] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U246/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[31] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[31] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[30] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U244/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[30] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[30] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[29] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U242/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[29] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[29] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[21] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U226/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[21] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[21] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[19] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U222/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[19] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[19] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[11] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U206/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[11] (FIFO_MEM_BLK)       0.00       9.37 r
+  F_Data[11] (out)                         0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[6] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U196/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[6] (FIFO_MEM_BLK)        0.00       9.37 r
+  F_Data[6] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[4] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U192/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[4] (FIFO_MEM_BLK)        0.00       9.37 r
+  F_Data[4] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[1] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U186/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[1] (FIFO_MEM_BLK)        0.00       9.37 r
+  F_Data[1] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: F_Data[0] (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.19       0.19 f
+  memblk/rd_addr[0] (FIFO_MEM_BLK)         0.00       0.19 f
+  memblk/U177/Y (INVX1_RVT)                0.82       1.01 r
+  memblk/U181/Y (AND2X1_RVT)               0.14       1.15 r
+  memblk/U15/Y (NBUFFX2_RVT)               5.87       7.02 r
+  memblk/U184/Y (AO221X1_RVT)              2.35       9.37 r
+  memblk/data_out[0] (FIFO_MEM_BLK)        0.00       9.37 r
+  F_Data[0] (out)                          0.00       9.37 r
+  data arrival time                                   9.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  output external delay                   -0.10      15.00
+  data required time                                 15.00
+  -----------------------------------------------------------
+  data required time                                 15.00
+  data arrival time                                  -9.37
+  -----------------------------------------------------------
+  slack (MET)                                         5.63
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+No paths.
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][24]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                         0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                           0.20       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                        0.00       0.20 r
+  memblk/U34/Y (INVX1_RVT)                                0.84       1.04 f
+  memblk/U83/Y (NAND3X0_RVT)                              0.15       1.20 r
+  memblk/U16/Y (INVX1_RVT)                                3.45       4.65 f
+  memblk/U8/Y (INVX1_RVT)                                 4.65       9.30 r
+  memblk/U75/Y (AO22X1_RVT)                               3.96      13.26 r
+  memblk/FIFO_reg[2][24]/D (DFFX1_RVT)                    0.01      13.27 r
+  data arrival time                                                 13.27
+
+  clock ideal_clock1 (rise edge)                         15.20      15.20
+  clock network delay (ideal)                             0.00      15.20
+  clock uncertainty                                      -0.10      15.10
+  memblk/FIFO_reg[2][24]/CLK (DFFX1_RVT)                  0.00      15.10 r
+  library setup time                                     -0.06      15.04
+  data required time                                                15.04
+  --------------------------------------------------------------------------
+  data required time                                                15.04
+  data arrival time                                                -13.27
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.77
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: memblk/FIFO_reg[3][31]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[3][31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  memblk/FIFO_reg[3][31]/CLK (DFFX1_RVT)                  0.00       0.00 r
+  memblk/FIFO_reg[3][31]/Q (DFFX1_RVT)                    0.15       0.15 f
+  memblk/U58/Y (AO22X1_RVT)                               0.09       0.24 f
+  memblk/FIFO_reg[3][31]/D (DFFX1_RVT)                    0.01       0.25 f
+  data arrival time                                                  0.25
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  memblk/FIFO_reg[3][31]/CLK (DFFX1_RVT)                  0.00       0.10 r
+  library hold time                                      -0.01       0.09
+  data required time                                                 0.09
+  --------------------------------------------------------------------------
+  data required time                                                 0.09
+  data arrival time                                                 -0.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+1

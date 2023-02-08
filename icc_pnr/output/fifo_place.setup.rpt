@@ -1,0 +1,1230 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : FIFO
+Version: Q-2019.12
+Date   : Wed Feb  8 09:31:34 2023
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U47/Y (OR2X1_RVT)                 0.08 *     2.26 f
+  sub_94/U45/Y (OR2X1_RVT)                 0.08 *     2.35 f
+  sub_94/U43/Y (OR2X1_RVT)                 0.08 *     2.42 f
+  sub_94/U39/Y (OR2X1_RVT)                 0.07 *     2.49 f
+  sub_94/U38/Y (XNOR2X1_RVT)               0.11 *     2.60 r
+  sub_94/SUM[31] (FIFO_DW01_dec_0)         0.00       2.60 r
+  U206/Y (AO222X1_RVT)                     0.11 *     2.72 r
+  fcounter_reg[31]/D (DFFARX1_RVT)         0.00 *     2.72 r
+  data arrival time                                   2.72
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[31]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.72
+  -----------------------------------------------------------
+  slack (MET)                                        12.31
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[30]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U47/Y (OR2X1_RVT)                 0.08 *     2.26 f
+  sub_94/U45/Y (OR2X1_RVT)                 0.08 *     2.35 f
+  sub_94/U43/Y (OR2X1_RVT)                 0.08 *     2.42 f
+  sub_94/U1/Y (INVX1_RVT)                  0.03 *     2.46 r
+  sub_94/U40/Y (XOR2X1_RVT)                0.13 *     2.59 f
+  sub_94/SUM[30] (FIFO_DW01_dec_0)         0.00       2.59 f
+  U199/Y (AO222X1_RVT)                     0.10 *     2.68 f
+  fcounter_reg[30]/D (DFFARX1_RVT)         0.00 *     2.68 f
+  data arrival time                                   2.68
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[30]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.68
+  -----------------------------------------------------------
+  slack (MET)                                        12.36
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U47/Y (OR2X1_RVT)                 0.08 *     2.26 f
+  sub_94/U45/Y (OR2X1_RVT)                 0.08 *     2.35 f
+  sub_94/U43/Y (OR2X1_RVT)                 0.08 *     2.42 f
+  sub_94/U1/Y (INVX1_RVT)                  0.03 *     2.46 r
+  sub_94/U42/Y (AO21X1_RVT)                0.05 *     2.51 r
+  sub_94/SUM[29] (FIFO_DW01_dec_0)         0.00       2.51 r
+  U200/Y (AO222X1_RVT)                     0.11 *     2.62 r
+  fcounter_reg[29]/D (DFFARX1_RVT)         0.00 *     2.62 r
+  data arrival time                                   2.62
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[29]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.62
+  -----------------------------------------------------------
+  slack (MET)                                        12.41
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U47/Y (OR2X1_RVT)                 0.08 *     2.26 f
+  sub_94/U45/Y (OR2X1_RVT)                 0.08 *     2.35 f
+  sub_94/U24/Y (INVX1_RVT)                 0.03 *     2.38 r
+  sub_94/U44/Y (AO21X1_RVT)                0.05 *     2.42 r
+  sub_94/SUM[28] (FIFO_DW01_dec_0)         0.00       2.42 r
+  U201/Y (AO222X1_RVT)                     0.11 *     2.54 r
+  fcounter_reg[28]/D (DFFARX1_RVT)         0.00 *     2.54 r
+  data arrival time                                   2.54
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[28]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.54
+  -----------------------------------------------------------
+  slack (MET)                                        12.49
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.07 r
+  add_88/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.14 r
+  add_88/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.21 r
+  add_88/U1_1_29/C1 (HADDX1_RVT)           0.07 *     2.28 r
+  add_88/U1_1_30/C1 (HADDX1_RVT)           0.07 *     2.35 r
+  add_88/U2/Y (XOR2X1_RVT)                 0.12 *     2.47 f
+  add_88/SUM[31] (FIFO_DW01_inc_1)         0.00       2.47 f
+  U235/Y (AO22X1_RVT)                      0.06 *     2.53 f
+  rd_ptr_reg[31]/D (DFFARX1_RVT)           0.00 *     2.53 f
+  data arrival time                                   2.53
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[31]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.53
+  -----------------------------------------------------------
+  slack (MET)                                        12.51
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: wr_ptr_reg[31]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_85/A[0] (FIFO_DW01_inc_2)            0.00       0.21 r
+  add_85/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_85/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_85/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_85/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_85/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_85/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_85/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.71 r
+  add_85/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.77 r
+  add_85/U1_1_9/C1 (HADDX1_RVT)            0.07 *     0.84 r
+  add_85/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.92 r
+  add_85/U1_1_11/C1 (HADDX1_RVT)           0.07 *     0.99 r
+  add_85/U1_1_12/C1 (HADDX1_RVT)           0.07 *     1.06 r
+  add_85/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.13 r
+  add_85/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.19 r
+  add_85/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.26 r
+  add_85/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.33 r
+  add_85/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.40 r
+  add_85/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.47 r
+  add_85/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.54 r
+  add_85/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.61 r
+  add_85/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.68 r
+  add_85/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.75 r
+  add_85/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.82 r
+  add_85/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.89 r
+  add_85/U1_1_25/C1 (HADDX1_RVT)           0.07 *     1.96 r
+  add_85/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.03 r
+  add_85/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.10 r
+  add_85/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.16 r
+  add_85/U1_1_29/C1 (HADDX1_RVT)           0.07 *     2.23 r
+  add_85/U1_1_30/C1 (HADDX1_RVT)           0.07 *     2.30 r
+  add_85/U2/Y (XOR2X1_RVT)                 0.12 *     2.43 f
+  add_85/SUM[31] (FIFO_DW01_inc_2)         0.00       2.43 f
+  U211/Y (AO22X1_RVT)                      0.06 *     2.49 f
+  wr_ptr_reg[31]/D (DFFARX1_RVT)           0.00 *     2.49 f
+  data arrival time                                   2.49
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  wr_ptr_reg[31]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.49
+  -----------------------------------------------------------
+  slack (MET)                                        12.55
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[27]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U47/Y (OR2X1_RVT)                 0.08 *     2.26 f
+  sub_94/U25/Y (INVX1_RVT)                 0.03 *     2.29 r
+  sub_94/U46/Y (AO21X1_RVT)                0.05 *     2.34 r
+  sub_94/SUM[27] (FIFO_DW01_dec_0)         0.00       2.34 r
+  U202/Y (AO222X1_RVT)                     0.11 *     2.45 r
+  fcounter_reg[27]/D (DFFARX1_RVT)         0.00 *     2.45 r
+  data arrival time                                   2.45
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[27]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.45
+  -----------------------------------------------------------
+  slack (MET)                                        12.58
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[30]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.07 r
+  add_88/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.14 r
+  add_88/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.21 r
+  add_88/U1_1_29/C1 (HADDX1_RVT)           0.07 *     2.28 r
+  add_88/U1_1_30/SO (HADDX1_RVT)           0.11 *     2.39 f
+  add_88/SUM[30] (FIFO_DW01_inc_1)         0.00       2.39 f
+  U236/Y (AO22X1_RVT)                      0.06 *     2.44 f
+  rd_ptr_reg[30]/D (DFFARX1_RVT)           0.00 *     2.44 f
+  data arrival time                                   2.44
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[30]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.44
+  -----------------------------------------------------------
+  slack (MET)                                        12.59
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: wr_ptr_reg[30]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_85/A[0] (FIFO_DW01_inc_2)            0.00       0.21 r
+  add_85/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_85/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_85/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_85/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_85/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_85/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_85/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.71 r
+  add_85/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.77 r
+  add_85/U1_1_9/C1 (HADDX1_RVT)            0.07 *     0.84 r
+  add_85/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.92 r
+  add_85/U1_1_11/C1 (HADDX1_RVT)           0.07 *     0.99 r
+  add_85/U1_1_12/C1 (HADDX1_RVT)           0.07 *     1.06 r
+  add_85/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.13 r
+  add_85/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.19 r
+  add_85/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.26 r
+  add_85/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.33 r
+  add_85/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.40 r
+  add_85/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.47 r
+  add_85/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.54 r
+  add_85/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.61 r
+  add_85/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.68 r
+  add_85/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.75 r
+  add_85/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.82 r
+  add_85/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.89 r
+  add_85/U1_1_25/C1 (HADDX1_RVT)           0.07 *     1.96 r
+  add_85/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.03 r
+  add_85/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.10 r
+  add_85/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.16 r
+  add_85/U1_1_29/C1 (HADDX1_RVT)           0.07 *     2.23 r
+  add_85/U1_1_30/SO (HADDX1_RVT)           0.11 *     2.34 f
+  add_85/SUM[30] (FIFO_DW01_inc_2)         0.00       2.34 f
+  U212/Y (AO22X1_RVT)                      0.06 *     2.40 f
+  wr_ptr_reg[30]/D (DFFARX1_RVT)           0.00 *     2.40 f
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  wr_ptr_reg[30]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                        12.64
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[26]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U49/Y (OR2X1_RVT)                 0.07 *     2.19 f
+  sub_94/U26/Y (INVX1_RVT)                 0.03 *     2.21 r
+  sub_94/U48/Y (AO21X1_RVT)                0.05 *     2.26 r
+  sub_94/SUM[26] (FIFO_DW01_dec_0)         0.00       2.26 r
+  U203/Y (AO222X1_RVT)                     0.11 *     2.37 r
+  fcounter_reg[26]/D (DFFARX1_RVT)         0.00 *     2.37 r
+  data arrival time                                   2.37
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[26]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.37
+  -----------------------------------------------------------
+  slack (MET)                                        12.66
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.07 r
+  add_88/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.14 r
+  add_88/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.21 r
+  add_88/U1_1_29/SO (HADDX1_RVT)           0.11 *     2.32 f
+  add_88/SUM[29] (FIFO_DW01_inc_1)         0.00       2.32 f
+  U237/Y (AO22X1_RVT)                      0.06 *     2.38 f
+  rd_ptr_reg[29]/D (DFFARX1_RVT)           0.00 *     2.38 f
+  data arrival time                                   2.38
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[29]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.38
+  -----------------------------------------------------------
+  slack (MET)                                        12.66
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: wr_ptr_reg[29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_85/A[0] (FIFO_DW01_inc_2)            0.00       0.21 r
+  add_85/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_85/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_85/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_85/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_85/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_85/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_85/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.71 r
+  add_85/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.77 r
+  add_85/U1_1_9/C1 (HADDX1_RVT)            0.07 *     0.84 r
+  add_85/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.92 r
+  add_85/U1_1_11/C1 (HADDX1_RVT)           0.07 *     0.99 r
+  add_85/U1_1_12/C1 (HADDX1_RVT)           0.07 *     1.06 r
+  add_85/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.13 r
+  add_85/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.19 r
+  add_85/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.26 r
+  add_85/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.33 r
+  add_85/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.40 r
+  add_85/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.47 r
+  add_85/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.54 r
+  add_85/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.61 r
+  add_85/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.68 r
+  add_85/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.75 r
+  add_85/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.82 r
+  add_85/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.89 r
+  add_85/U1_1_25/C1 (HADDX1_RVT)           0.07 *     1.96 r
+  add_85/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.03 r
+  add_85/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.10 r
+  add_85/U1_1_28/C1 (HADDX1_RVT)           0.07 *     2.16 r
+  add_85/U1_1_29/SO (HADDX1_RVT)           0.11 *     2.27 f
+  add_85/SUM[29] (FIFO_DW01_inc_2)         0.00       2.27 f
+  U213/Y (AO22X1_RVT)                      0.06 *     2.33 f
+  wr_ptr_reg[29]/D (DFFARX1_RVT)           0.00 *     2.33 f
+  data arrival time                                   2.33
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  wr_ptr_reg[29]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.33
+  -----------------------------------------------------------
+  slack (MET)                                        12.71
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[25]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U51/Y (OR2X1_RVT)                 0.07 *     2.11 f
+  sub_94/U27/Y (INVX1_RVT)                 0.03 *     2.14 r
+  sub_94/U50/Y (AO21X1_RVT)                0.05 *     2.19 r
+  sub_94/SUM[25] (FIFO_DW01_dec_0)         0.00       2.19 r
+  U204/Y (AO222X1_RVT)                     0.11 *     2.30 r
+  fcounter_reg[25]/D (DFFARX1_RVT)         0.00 *     2.30 r
+  data arrival time                                   2.30
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[25]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.30
+  -----------------------------------------------------------
+  slack (MET)                                        12.73
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.07 r
+  add_88/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.14 r
+  add_88/U1_1_28/SO (HADDX1_RVT)           0.11 *     2.25 f
+  add_88/SUM[28] (FIFO_DW01_inc_1)         0.00       2.25 f
+  U238/Y (AO22X1_RVT)                      0.06 *     2.31 f
+  rd_ptr_reg[28]/D (DFFARX1_RVT)           0.00 *     2.31 f
+  data arrival time                                   2.31
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[28]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.31
+  -----------------------------------------------------------
+  slack (MET)                                        12.73
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: wr_ptr_reg[28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_85/A[0] (FIFO_DW01_inc_2)            0.00       0.21 r
+  add_85/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_85/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_85/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_85/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_85/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_85/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_85/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.71 r
+  add_85/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.77 r
+  add_85/U1_1_9/C1 (HADDX1_RVT)            0.07 *     0.84 r
+  add_85/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.92 r
+  add_85/U1_1_11/C1 (HADDX1_RVT)           0.07 *     0.99 r
+  add_85/U1_1_12/C1 (HADDX1_RVT)           0.07 *     1.06 r
+  add_85/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.13 r
+  add_85/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.19 r
+  add_85/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.26 r
+  add_85/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.33 r
+  add_85/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.40 r
+  add_85/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.47 r
+  add_85/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.54 r
+  add_85/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.61 r
+  add_85/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.68 r
+  add_85/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.75 r
+  add_85/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.82 r
+  add_85/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.89 r
+  add_85/U1_1_25/C1 (HADDX1_RVT)           0.07 *     1.96 r
+  add_85/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.03 r
+  add_85/U1_1_27/C1 (HADDX1_RVT)           0.07 *     2.10 r
+  add_85/U1_1_28/SO (HADDX1_RVT)           0.11 *     2.20 f
+  add_85/SUM[28] (FIFO_DW01_inc_2)         0.00       2.20 f
+  U214/Y (AO22X1_RVT)                      0.06 *     2.26 f
+  wr_ptr_reg[28]/D (DFFARX1_RVT)           0.00 *     2.26 f
+  data arrival time                                   2.26
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  wr_ptr_reg[28]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.26
+  -----------------------------------------------------------
+  slack (MET)                                        12.78
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[27]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.07 r
+  add_88/U1_1_27/SO (HADDX1_RVT)           0.11 *     2.18 f
+  add_88/SUM[27] (FIFO_DW01_inc_1)         0.00       2.18 f
+  U239/Y (AO22X1_RVT)                      0.06 *     2.24 f
+  rd_ptr_reg[27]/D (DFFARX1_RVT)           0.00 *     2.24 f
+  data arrival time                                   2.24
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[27]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.24
+  -----------------------------------------------------------
+  slack (MET)                                        12.80
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[24]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U53/Y (OR2X1_RVT)                 0.08 *     2.04 f
+  sub_94/U28/Y (INVX1_RVT)                 0.03 *     2.07 r
+  sub_94/U52/Y (AO21X1_RVT)                0.05 *     2.11 r
+  sub_94/SUM[24] (FIFO_DW01_dec_0)         0.00       2.11 r
+  U205/Y (AO222X1_RVT)                     0.11 *     2.22 r
+  fcounter_reg[24]/D (DFFARX1_RVT)         0.00 *     2.22 r
+  data arrival time                                   2.22
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[24]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.22
+  -----------------------------------------------------------
+  slack (MET)                                        12.81
+
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: wr_ptr_reg[27]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_85/A[0] (FIFO_DW01_inc_2)            0.00       0.21 r
+  add_85/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_85/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_85/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_85/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_85/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_85/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_85/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.71 r
+  add_85/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.77 r
+  add_85/U1_1_9/C1 (HADDX1_RVT)            0.07 *     0.84 r
+  add_85/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.92 r
+  add_85/U1_1_11/C1 (HADDX1_RVT)           0.07 *     0.99 r
+  add_85/U1_1_12/C1 (HADDX1_RVT)           0.07 *     1.06 r
+  add_85/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.13 r
+  add_85/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.19 r
+  add_85/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.26 r
+  add_85/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.33 r
+  add_85/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.40 r
+  add_85/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.47 r
+  add_85/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.54 r
+  add_85/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.61 r
+  add_85/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.68 r
+  add_85/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.75 r
+  add_85/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.82 r
+  add_85/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.89 r
+  add_85/U1_1_25/C1 (HADDX1_RVT)           0.07 *     1.96 r
+  add_85/U1_1_26/C1 (HADDX1_RVT)           0.07 *     2.03 r
+  add_85/U1_1_27/SO (HADDX1_RVT)           0.10 *     2.13 f
+  add_85/SUM[27] (FIFO_DW01_inc_2)         0.00       2.13 f
+  U215/Y (AO22X1_RVT)                      0.06 *     2.19 f
+  wr_ptr_reg[27]/D (DFFARX1_RVT)           0.00 *     2.19 f
+  data arrival time                                   2.19
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  wr_ptr_reg[27]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.19
+  -----------------------------------------------------------
+  slack (MET)                                        12.85
+
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[26]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)          0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)            0.21       0.21 r
+  add_88/A[0] (FIFO_DW01_inc_1)            0.00       0.21 r
+  add_88/U1_1_1/C1 (HADDX1_RVT)            0.08 *     0.29 r
+  add_88/U1_1_2/C1 (HADDX1_RVT)            0.07 *     0.36 r
+  add_88/U1_1_3/C1 (HADDX1_RVT)            0.07 *     0.43 r
+  add_88/U1_1_4/C1 (HADDX1_RVT)            0.07 *     0.50 r
+  add_88/U1_1_5/C1 (HADDX1_RVT)            0.07 *     0.57 r
+  add_88/U1_1_6/C1 (HADDX1_RVT)            0.07 *     0.64 r
+  add_88/U1_1_7/C1 (HADDX1_RVT)            0.07 *     0.72 r
+  add_88/U1_1_8/C1 (HADDX1_RVT)            0.07 *     0.79 r
+  add_88/U1_1_9/C1 (HADDX1_RVT)            0.08 *     0.87 r
+  add_88/U1_1_10/C1 (HADDX1_RVT)           0.07 *     0.94 r
+  add_88/U1_1_11/C1 (HADDX1_RVT)           0.07 *     1.01 r
+  add_88/U1_1_12/C1 (HADDX1_RVT)           0.08 *     1.09 r
+  add_88/U1_1_13/C1 (HADDX1_RVT)           0.07 *     1.16 r
+  add_88/U1_1_14/C1 (HADDX1_RVT)           0.07 *     1.23 r
+  add_88/U1_1_15/C1 (HADDX1_RVT)           0.07 *     1.31 r
+  add_88/U1_1_16/C1 (HADDX1_RVT)           0.07 *     1.38 r
+  add_88/U1_1_17/C1 (HADDX1_RVT)           0.07 *     1.45 r
+  add_88/U1_1_18/C1 (HADDX1_RVT)           0.07 *     1.52 r
+  add_88/U1_1_19/C1 (HADDX1_RVT)           0.07 *     1.59 r
+  add_88/U1_1_20/C1 (HADDX1_RVT)           0.07 *     1.65 r
+  add_88/U1_1_21/C1 (HADDX1_RVT)           0.07 *     1.72 r
+  add_88/U1_1_22/C1 (HADDX1_RVT)           0.07 *     1.79 r
+  add_88/U1_1_23/C1 (HADDX1_RVT)           0.07 *     1.86 r
+  add_88/U1_1_24/C1 (HADDX1_RVT)           0.07 *     1.93 r
+  add_88/U1_1_25/C1 (HADDX1_RVT)           0.07 *     2.00 r
+  add_88/U1_1_26/SO (HADDX1_RVT)           0.11 *     2.11 f
+  add_88/SUM[26] (FIFO_DW01_inc_1)         0.00       2.11 f
+  U240/Y (AO22X1_RVT)                      0.06 *     2.17 f
+  rd_ptr_reg[26]/D (DFFARX1_RVT)           0.00 *     2.17 f
+  data arrival time                                   2.17
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  rd_ptr_reg[26]/CLK (DFFARX1_RVT)         0.00      15.10 r
+  library setup time                      -0.06      15.04
+  data required time                                 15.04
+  -----------------------------------------------------------
+  data required time                                 15.04
+  data arrival time                                  -2.17
+  -----------------------------------------------------------
+  slack (MET)                                        12.87
+
+
+  Startpoint: fcounter_reg[1]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fcounter_reg[23]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  fcounter_reg[1]/CLK (DFFARX1_RVT)        0.00       0.00 r
+  fcounter_reg[1]/Q (DFFARX1_RVT)          0.19       0.19 f
+  sub_94/A[1] (FIFO_DW01_dec_0)            0.00       0.19 f
+  sub_94/U91/Y (OR2X1_RVT)                 0.09 *     0.28 f
+  sub_94/U90/Y (OR2X1_RVT)                 0.08 *     0.36 f
+  sub_94/U89/Y (OR2X1_RVT)                 0.08 *     0.43 f
+  sub_94/U88/Y (OR2X1_RVT)                 0.08 *     0.51 f
+  sub_94/U87/Y (OR2X1_RVT)                 0.08 *     0.59 f
+  sub_94/U86/Y (OR2X1_RVT)                 0.08 *     0.67 f
+  sub_94/U85/Y (OR2X1_RVT)                 0.07 *     0.74 f
+  sub_94/U84/Y (OR2X1_RVT)                 0.07 *     0.81 f
+  sub_94/U83/Y (OR2X1_RVT)                 0.08 *     0.89 f
+  sub_94/U82/Y (OR2X1_RVT)                 0.08 *     0.97 f
+  sub_94/U80/Y (OR2X1_RVT)                 0.08 *     1.04 f
+  sub_94/U78/Y (OR2X1_RVT)                 0.08 *     1.12 f
+  sub_94/U76/Y (OR2X1_RVT)                 0.08 *     1.19 f
+  sub_94/U74/Y (OR2X1_RVT)                 0.08 *     1.27 f
+  sub_94/U72/Y (OR2X1_RVT)                 0.08 *     1.35 f
+  sub_94/U70/Y (OR2X1_RVT)                 0.08 *     1.42 f
+  sub_94/U68/Y (OR2X1_RVT)                 0.08 *     1.50 f
+  sub_94/U66/Y (OR2X1_RVT)                 0.08 *     1.58 f
+  sub_94/U64/Y (OR2X1_RVT)                 0.08 *     1.65 f
+  sub_94/U61/Y (OR2X1_RVT)                 0.07 *     1.73 f
+  sub_94/U59/Y (OR2X1_RVT)                 0.08 *     1.81 f
+  sub_94/U57/Y (OR2X1_RVT)                 0.08 *     1.89 f
+  sub_94/U55/Y (OR2X1_RVT)                 0.08 *     1.96 f
+  sub_94/U2/Y (INVX1_RVT)                  0.03 *     1.99 r
+  sub_94/U54/Y (AO21X1_RVT)                0.05 *     2.04 r
+  sub_94/SUM[23] (FIFO_DW01_dec_0)         0.00       2.04 r
+  U177/Y (AO222X1_RVT)                     0.11 *     2.15 r
+  fcounter_reg[23]/D (DFFARX1_RVT)         0.00 *     2.15 r
+  data arrival time                                   2.15
+
+  clock ideal_clock1 (rise edge)          15.20      15.20
+  clock network delay (ideal)              0.00      15.20
+  clock uncertainty                       -0.10      15.10
+  fcounter_reg[23]/CLK (DFFARX1_RVT)       0.00      15.10 r
+  library setup time                      -0.07      15.03
+  data required time                                 15.03
+  -----------------------------------------------------------
+  data required time                                 15.03
+  data arrival time                                  -2.15
+  -----------------------------------------------------------
+  slack (MET)                                        12.88
+
+
+1

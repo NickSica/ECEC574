@@ -1,0 +1,9 @@
+#@ # 
+#@ # Running icc_shell Version Q-2019.12 for linux64 -- Nov 26, 2019
+#@ # Date:   Wed Feb  8 09:34:35 2023
+#@ # Run by: njs82@xunil-03.coe.drexel.edu
+#@ 
+
+man verify_route
+cat scripts/extract_icc.tcl
+exit

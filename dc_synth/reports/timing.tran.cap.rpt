@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: wr_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: memblk/FIFO_reg[2][24]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_MEM_BLK       8000                  saed32rvt_ss0p95v25c
+
+  Point                                       Fanout       Cap     Trans      Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                                              0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  wr_ptr_reg[0]/CLK (DFFARX1_RVT)                                   0.00      0.00       0.00 r
+  wr_ptr_reg[0]/Q (DFFARX1_RVT)                                     0.06      0.20       0.20 r
+  wr_ptr[0] (net)                               6         3.75                0.00       0.20 r
+  memblk/wr_addr[0] (FIFO_MEM_BLK)                                            0.00       0.20 r
+  memblk/wr_addr[0] (net)                                 3.75                0.00       0.20 r
+  memblk/U34/A (INVX1_RVT)                                          0.06      0.81       1.01 r
+  memblk/U34/Y (INVX1_RVT)                                          0.03      0.03       1.04 f
+  memblk/n212 (net)                             2         0.99                0.00       1.04 f
+  memblk/U83/A2 (NAND3X0_RVT)                                       0.03      0.05       1.10 f
+  memblk/U83/Y (NAND3X0_RVT)                                        0.13      0.10       1.20 r
+  memblk/n8 (net)                              11         6.28                0.00       1.20 r
+  memblk/U16/A (INVX1_RVT)                                          0.13      3.36       4.56 r
+  memblk/U16/Y (INVX1_RVT)                                          0.10      0.09       4.65 f
+  memblk/n204 (net)                            13         6.41                0.00       4.65 f
+  memblk/U8/A (INVX1_RVT)                                           0.10      4.56       9.21 f
+  memblk/U8/Y (INVX1_RVT)                                           0.08      0.09       9.30 r
+  memblk/n202 (net)                            12         6.25                0.00       9.30 r
+  memblk/U75/A4 (AO22X1_RVT)                                        0.08      3.87      13.17 r
+  memblk/U75/Y (AO22X1_RVT)                                         0.04      0.09      13.26 r
+  memblk/n77 (net)                              1         0.50                0.00      13.26 r
+  memblk/FIFO_reg[2][24]/D (DFFX1_RVT)                              0.04      0.01      13.27 r
+  data arrival time                                                                     13.27
+
+  clock ideal_clock1 (rise edge)                                             15.20      15.20
+  clock network delay (ideal)                                                 0.00      15.20
+  clock uncertainty                                                          -0.10      15.10
+  memblk/FIFO_reg[2][24]/CLK (DFFX1_RVT)                                      0.00      15.10 r
+  library setup time                                                         -0.06      15.04
+  data required time                                                                    15.04
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    15.04
+  data arrival time                                                                    -13.27
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                            1.77
+
+
+1

@@ -1,0 +1,384 @@
+Variable                Value     Type    Default    Constraints
+----------------------- --------- ------- ---------- ----------------------- 
+arch                    linux64   string  linux64
+auto_link_disable       false     bool    false
+auto_wire_load_selection true     bool    true
+bus_naming_style        %s[%d]    string  %s[%d]
+case_analysis_log_file            string  
+case_analysis_propagate_through_icg false bool false
+case_analysis_sequential_propagation never string never {never always}
+collection_result_display_limit 100 int   100        val >= -1
+create_clock_no_input_delay false bool    false
+dbr_ignore_external_links false   bool    false
+default_oc_per_lib      true      bool    true
+delay_calc_waveform_analysis_constraint_arcs_compatibility true bool true
+delay_calc_waveform_analysis_mode disabled string disabled {disabled full_design}
+disable_case_analysis   false     bool    false
+disable_case_analysis_ti_hi_lo false bool false
+distributed_custom_protocol_error_detection_timeout 86400 int 86400 val >= 60
+distributed_farm_protocol_error_detection_timeout 0 int 0 val >= 0
+distributed_logging     medium    string  medium     {low medium high highest}
+distributed_sh_protocol_error_detection_timeout 300 int 300 val >= 60
+eco_allow_filler_cells_as_open_sites true bool true
+eco_allow_sizing_with_lib_cell_attributes string
+eco_alternative_area_ratio_threshold 2 real 2        val >= 0
+eco_alternative_cell_attribute_restrictions string
+eco_enable_mim          false     bool    false
+eco_enable_more_scenarios_than_hosts false bool false
+eco_estimation_output_columns area stage_delay arrival slack string area stage_delay arrival slack
+eco_insert_buffer_search_distance_in_site_rows 8 int 8 val >= 0
+eco_instance_name_prefix U        string  U
+eco_leakage_exclude_unconstrained_cells false bool false
+eco_net_name_prefix     net       string  net
+eco_power_exclude_unconstrained_cells false bool false
+eco_report_unfixed_reason_max_endpoints 0 int 0
+eco_save_session_data_type        string  
+eco_strict_pin_name_equivalence false bool false
+eco_write_changes_prepend_libfile_to_libcell false bool false
+eco_write_changes_prepend_libname_to_libcell false bool false
+enable_golden_upf       false     bool    false
+enable_license_auto_reduction false bool  false
+enable_path_tagging     false     bool    false
+enable_rule_based_query false     bool    false
+extract_model_capacitance_limit 64 real   64         val >= 0
+extract_model_clock_latency_arcs_include_all_registers true bool true
+extract_model_clock_transition_limit 5 real 5        val >= 0
+extract_model_create_variation_tables auto string auto {delay_only auto none}
+extract_model_data_transition_limit 5 real 5         val >= 0
+extract_model_db_naming_compatibility true bool true
+extract_model_enable_report_delay_calculation true bool true
+extract_model_gating_as_nochange false bool false
+extract_model_include_clock_tree_pulse_width false bool false
+extract_model_include_ideal_clock_network_latency false bool false
+extract_model_include_upf_data false bool false
+extract_model_keep_inferred_nochange_arcs false bool false
+extract_model_lib_format_with_check_pins false bool false
+extract_model_merge_clock_gating false bool false
+extract_model_noise_iv_index_lower_factor -1 real -1 val <= 0
+extract_model_noise_iv_index_upper_factor 2 real 2   val >= 0
+extract_model_noise_width_points  string  
+extract_model_num_capacitance_points 5 int 5         val >= 1
+extract_model_num_clock_transition_points 5 int 5    val >= 1
+extract_model_num_data_transition_points 5 int 5     val >= 1
+extract_model_num_noise_iv_points 10 int  10         val >= 1
+extract_model_num_noise_width_points 5 int 5         val >= 1
+extract_model_short_syntax_compatibility true bool true
+extract_model_single_pin_cap true bool    true
+extract_model_single_pin_cap_max true bool true
+extract_model_split_partial_clock_gating_arcs false bool false
+extract_model_status_level none   string  none       {none low medium high detailed very_detailed max}
+extract_model_suppress_three_state false bool false
+extract_model_upf_supply_precedence netlist string netlist {netlist internal external}
+extract_model_use_conservative_current_slew false bool false
+extract_model_with_3d_arcs true   bool    true
+extract_model_with_ccs_timing false bool  false
+extract_model_with_clock_latency_arcs false bool false
+extract_model_with_min_max_delay_constraint false bool false
+extract_model_write_case_values_to_constraint_file false bool false
+extract_model_write_verilog_format_wrapper false bool false
+gca_setup_file                    string  
+golden_upf_report_missing_objects false bool false
+hier_modeling_version   1         real    1          val >= 1
+hier_scope_check_defaults clock_arrival clock_transition clock_skew_with_uncertainty string clock_arrival clock_transition clock_skew_with_uncertainty
+hierarchy_separator     /         string  /          {/ @ ^ # . |}
+hyperscale_clock_mapping_period_percent_tolerance 0 real 0 val >= 0
+hyperscale_constraint_extractor_characterize_context false bool false
+hyperscale_constraint_extractor_enforcement strict string strict {strict normal advanced}
+hyperscale_constraint_extractor_output_all_variables false bool false
+hyperscale_constraint_output_compressed true bool true
+hyperscale_constraint_output_format pt string pt     {pt sdc dctcl}
+hyperscale_constraint_output_no_split true bool true
+hyperscale_constraint_write_context false bool false
+hyperscale_data_version 4.5       string  4.5
+hyperscale_disable_auto_clock_mapping false bool false
+hyperscale_enable_analysis false  bool    false
+hyperscale_enable_block_constraint_extractor false bool false
+hyperscale_enable_eco_context false bool  false
+hyperscale_keep_required_time_mode high_fanout_stub string high_fanout_stub {no_stub high_fanout_stub internal_path_stub all_stub}
+hyperscale_merge_match_clock_with_constant false bool false
+hyperscale_save_session_include_external_data true bool true
+ilm_ignore_percentage   25        real    25
+in_gui_session          false     string  false
+library_pg_file_pattern           string  
+link_allow_design_mismatch false  bool    false
+link_create_black_boxes true      bool    true
+link_force_case         check_reference string check_reference {check_reference case_sensitive case_insensitive}
+link_keep_cells_with_pg_only_connection false bool false
+link_keep_pg_connectivity false   bool    false
+link_keep_unconnected_cells false bool    false
+link_path               *         string  *
+link_path_per_instance            string  
+lp_default_ground_pin_name        string  
+lp_default_power_pin_name         string  
+merge_model_allow_generated_clock_renaming false bool false
+merge_model_ignore_pin_function_check false bool false
+model_validation_capacitance_tolerance 0.001 0.001 string 0.001 0.001
+model_validation_check_design true bool   true
+model_validation_ignore_pass true bool    true
+model_validation_output_file verif.out string verif.out
+model_validation_pba_clock_path false bool false
+model_validation_percent_tolerance 0.00 0.00 string 0.00 0.00
+model_validation_reanalyze_max_paths 1000 int 1000   val >= 0
+model_validation_report_split true bool   true
+model_validation_save_session true bool   true
+model_validation_section          string  
+model_validation_significant_digits 3 int 3          0 <= val <= 13
+model_validation_sort_by_worst true bool  true
+model_validation_timing_tolerance 0.01 0.025 string 0.01 0.025
+model_validation_verbose false    bool    false
+multi_core_allow_overthreading true bool  true
+mv_allow_pg_pin_reconnection false bool   false
+mv_input_enforce_simple_names false bool  false
+mw_design_library                 string  
+mw_logic0_net           VSS       string  VSS
+mw_logic1_net           VDD       string  VDD
+old_port_voltage_assignment false bool    false
+parasitic_corner_name             string  
+parasitics_cap_warning_threshold 0 real   0          val >= 0
+parasitics_log_file     parasitics_command.log string parasitics_command.log
+parasitics_rejection_net_size 20000 int   20000      val >= 1
+parasitics_res_warning_threshold 0 real   0          val >= 0
+parasitics_warning_net_size 10000 int     10000      val >= 1
+pba_aocvm_only_mode     false     bool    false
+pba_derate_list                   string  
+pba_derate_only_mode    false     bool    false
+pba_enable_path_based_physical_exclusivity false bool false
+pba_enable_xtalk_delay_ocv_pessimism_reduction false bool false
+pba_exhaustive_endpoint_path_limit 25000 string 25000
+pba_path_mode_enumerate_by_gba_slack true bool true
+pba_path_mode_sort_by_gba_slack false bool false
+pba_path_recalculation_limit_compatibility true bool true
+pba_recalculate_full_path false   bool    false
+port_search_in_current_instance false bool false
+power_analysis_mode     averaged  string  averaged   {averaged time_based leakage_variation vfra}
+power_calc_use_ceff_for_internal_power false bool false
+power_capp_edge_triggered_propagation true bool true
+power_check_defaults    out_of_table_range missing_table missing_function string out_of_table_range missing_table missing_function
+power_clock_network_include_clock_gating_network false bool false
+power_clock_network_include_register_clock_pin_power true bool true
+power_default_base_clock fastest  string  fastest
+power_default_static_probability 0.5 real 0.5
+power_default_toggle_rate 0.1     real    0.1
+power_default_toggle_rate_reference_clock related string related {fastest related}
+power_disable_exact_name_match_to_hier_pin false bool false
+power_disable_exact_name_match_to_net false bool false
+power_domains_compatibility false bool    false
+power_enable_analysis   false     bool    false
+power_enable_clock_scaling false  bool    false
+power_enable_feedthrough_in_empty_cell false bool false
+power_enable_leakage_variation_analysis false bool false
+power_enable_multi_rail_analysis false bool false
+power_estimate_power_for_unmatched_event true bool true
+power_full_transition_glitch_scaling 1 real 1
+power_include_initial_x_transitions false bool false
+power_keep_vcd_event_order false  bool    false
+power_limit_extrapolation_range false bool false
+power_match_state_for_logic_x 0   string  0          {0 1 x}
+power_model_preference  nlpm      string  nlpm       {ccs nlpm}
+power_order_clock_events false    bool    false
+power_rail_output_file            string  
+power_rail_static_analysis true   bool    true
+power_read_vcd_ignore_case true   bool    true
+power_report_leakage_breakdowns false bool false
+power_reset_negative_extrapolation_value false bool false
+power_reset_negative_internal_power false bool false
+power_scale_dynamic_power_at_power_off false bool false
+power_scale_internal_arc false    bool    false
+power_table_include_switching_power true bool true
+power_use_ccsp_pin_capacitance false bool false
+power_x_transition_derate_factor 0.5 real 0.5
+pt_ilm_dir              .         string  .
+pt_model_dir            .         string  .
+pt_shell_mode           primetime string  primetime
+pt_tmp_dir              /tmp      string  /tmp
+ptxr_root               /opt/synopsys/2016/primetime string /opt/synopsys/2016/primetime
+query_objects_format    Legacy    string  Legacy     {Tcl Legacy}
+rc_adjust_rd_when_less_than_rnet true bool true
+rc_always_use_max_pin_cap false   bool    false
+rc_cache_min_max_rise_fall_ceff false bool false
+rc_ccs_extrapolation_range_compatibility true bool true
+rc_ceff_use_delay_reference_at_cpin false bool false
+rc_degrade_min_slew_when_rd_less_than_rnet false bool false
+rc_degrade_wlm_net_slew_based_on_delay false bool false
+rc_driver_model_mode    advanced  string  advanced   {basic advanced}
+rc_filter_rd_less_than_rnet true  bool    true
+rc_rd_less_than_rnet_threshold 0.45 real  0.45       0 <= val <= 1e+06
+rc_receiver_model_mode  advanced  string  advanced   {basic advanced}
+read_parasitics_load_locations false bool false
+report_capacitance_use_ccs_receiver_model true bool true
+report_default_significant_digits 2 int   2          0 <= val <= 13
+sdc_save_source_file_information false bool false
+sdc_version             2.0       string  2.0        {1.0 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.0}
+sdc_write_unambiguous_names true  bool    true
+sdf_align_multi_drive_cell_arcs false bool false
+sdf_align_multi_drive_cell_arcs_threshold 1 real 1   val >= 0
+sdf_enable_cond_start_end false   bool    false
+sdf_enable_port_construct false   bool    false
+sdf_enable_port_construct_threshold 1 real 1         val >= 0
+search_path                       string  
+sh_allow_tcl_with_set_app_var true bool   true
+sh_allow_tcl_with_set_app_var_no_message_list string
+sh_arch                 linux64   string  linux64
+sh_command_abbrev_mode  Anywhere  string  Anywhere   {Anywhere Command-Line-Only None}
+sh_command_abbrev_options true    bool    true
+sh_command_log_file     pt_shell_command.log string pt_shell_command.log
+sh_continue_on_error    false     bool    false
+sh_dev_null             /dev/null string  /dev/null
+sh_eco_enabled          false     bool    false
+sh_enable_line_editing  true      string  true
+sh_enable_page_mode     false     bool    false
+sh_enable_stdout_redirect true    bool    true
+sh_enable_system_monitoring true  bool    true
+sh_fast_analysis_mode_enabled false bool  false
+sh_global_per_message_limit 10000 int     10000      val >= 0
+sh_help_shows_group_overview true bool    true
+sh_high_capacity_effort default   string  default    {default low medium high snps_high}
+sh_high_capacity_enabled true     bool    true
+sh_launch_dir           /home/njs82@drexel.edu/ECEC574/pt_pre string /home/njs82@drexel.edu/ECEC574/pt_pre
+sh_limited_messages     DES-002   RC-002 RC-004 RC-005 RC-006 RC-009 RC-011 RC-012 RC-104 RC-201 RC-202 RC-203 RC-204 SLG-214 SLG-216 SLG-217 PTE-014 PTE-060 PTE-070                                                 PTE-114 SDF-036 UITE-494 UITE-474 LNK-039 LNK-038 LNK-043 LNK-044 HS-015 HS-023 HS-031 HS-037 PTE-101 PTIO-5 UITE-504 UITE-529 UITE-581 DES-028  DES-023  DES-024    ENV-003 XTALK-307 XTALK-308                                              PARA-001 PARA-003 PARA-004 PARA-005 PARA-006 PARA-007 PARA-010 PARA-011 PARA-020 PARA-040 PARA-041 PARA-043 PARA-044 PARA-045 PARA-046 PARA-047 PARA-050 PARA-051 PARA-052 PARA-053                             PARA-060 PARA-061 PARA-063 PARA-064 PARA-065 PARA-066 PARA-067 PARA-068                   PARA-071 PARA-072 PARA-073 PARA-074 PARA-075 PARA-078 PARA-079          PARA-081 PARA-082 PARA-083 PARA-084 PARA-085 PARA-086 PARA-087 PARA-088 PARA-089 PARA-090 PARA-092 PARA-093 PARA-094 PARA-095 PARA-096 PARA-098          PARA-100 PARA-104 PARA-106 PARA-007                                     PARA-111 PARA-112 PARA-113 PARA-114 PARA-115 PARA-118 PARA-119 PARA-120 PARA-121 PARA-122 PARA-123 PARA-124                                                     PARA-140 PARA-141 PARA-142 PARA-143 PARA-144 PARA-145 PARA-146      PARA-159 SPFP-001 SPFP-002 SPFP-010 SPFP-011 SPFP-012 SPFP-013 SPFP-014 SPFP-015 SPFP-100 SPFP-101 SPFP-102 SPFP-103 SPFP-104 SPFP-105 SPFP-106 SPFP-107 SPFP-108 SPFP-109 SPFP-110 SPFP-111 SPFP-112 SPFP-113 SPFP-114 SPFP-115 SPFP-116 SPFP-118 SPFP-119 SPFP-120 SPFP-121 SPFP-122 SPFP-123 string DES-002   RC-002 RC-004 RC-005 RC-006 RC-009 RC-011 RC-012 RC-104 RC-201 RC-202 RC-203 RC-204 SLG-214 SLG-216 SLG-217 PTE-014 PTE-060 PTE-070                                                 PTE-114 SDF-036 UITE-494 UITE-474 LNK-039 LNK-038 LNK-043 LNK-044 HS-015 HS-023 HS-031 HS-037 PTE-101 PTIO-5 UITE-504 UITE-529 UITE-581 DES-028  DES-023  DES-024    ENV-003 XTALK-307 XTALK-308                                              PARA-001 PARA-003 PARA-004 PARA-005 PARA-006 PARA-007 PARA-010 PARA-011 PARA-020 PARA-040 PARA-041 PARA-043 PARA-044 PARA-045 PARA-046 PARA-047 PARA-050 PARA-051 PARA-052 PARA-053                             PARA-060 PARA-061 PARA-063 PARA-064 PARA-065 PARA-066 PARA-067 PARA-068                   PARA-071 PARA-072 PARA-073 PARA-074 PARA-075 PARA-078 PARA-079          PARA-081 PARA-082 PARA-083 PARA-084 PARA-085 PARA-086 PARA-087 PARA-088 PARA-089 PARA-090 PARA-092 PARA-093 PARA-094 PARA-095 PARA-096 PARA-098          PARA-100 PARA-104 PARA-106 PARA-007                                     PARA-111 PARA-112 PARA-113 PARA-114 PARA-115 PARA-118 PARA-119 PARA-120 PARA-121 PARA-122 PARA-123 PARA-124                                                     PARA-140 PARA-141 PARA-142 PARA-143 PARA-144 PARA-145 PARA-146      PARA-159 SPFP-001 SPFP-002 SPFP-010 SPFP-011 SPFP-012 SPFP-013 SPFP-014 SPFP-015 SPFP-100 SPFP-101 SPFP-102 SPFP-103 SPFP-104 SPFP-105 SPFP-106 SPFP-107 SPFP-108 SPFP-109 SPFP-110 SPFP-111 SPFP-112 SPFP-113 SPFP-114 SPFP-115 SPFP-116 SPFP-118 SPFP-119 SPFP-120 SPFP-121 SPFP-122 SPFP-123
+sh_line_editing_mode    emacs     string  emacs
+sh_message_limit        100       int     100        val >= 0
+sh_new_variable_message true      bool    false
+sh_new_variable_message_in_proc false bool false
+sh_new_variable_message_in_script false bool false
+sh_output_log_file                string  
+sh_product_version      L-2016.06-SP3-1 string L-2016.06-SP3-1
+sh_script_stop_severity None      string  None       {E W None}
+sh_source_emits_line_numbers None string  None       {E W None}
+sh_source_logging       true      bool    true
+sh_source_uses_search_path false  bool    false
+sh_tcllib_app_dirname   primetime string  primetime
+sh_user_man_path                  string  
+si_analysis_logical_correlation_mode true bool true
+si_ccs_aggressor_alignment_mode lookahead string lookahead {stage lookahead}
+si_enable_analysis      false     bool    false
+si_enable_multi_input_switching_analysis false bool false
+si_enable_multi_input_switching_timing_window_filter true bool true
+si_filter_accum_aggr_noise_peak_ratio 0.03 real 0.03 0 <= val <= 1000
+si_filter_keep_all_port_aggressors false bool false
+si_filter_per_aggr_noise_peak_ratio 0.01 real 0.01   0 <= val <= 1
+si_ilm_keep_si_user_excluded_aggressors false bool false
+si_noise_composite_aggr_mode disabled string disabled
+si_noise_endpoint_height_threshold_ratio 0.75 real 0.75 0 <= val <= 1
+si_noise_immunity_default_height_ratio 0.4 real 0.4  0 <= val <= 1
+si_noise_limit_propagation_ratio 0.75 real 0.75      0 <= val <= 1
+si_noise_skip_update_for_report_attribute false bool false
+si_noise_slack_skip_disabled_arcs false bool false
+si_noise_update_status_level none string  none       {none low high}
+si_use_driving_cell_derate_for_delta_delay false bool false
+si_xtalk_composite_aggr_mode disabled string disabled
+si_xtalk_composite_aggr_noise_peak_ratio 0.01 real 0.01 0 <= val <= 1
+si_xtalk_composite_aggr_quantile_high_pct 99.73 real 99.73 0 <= val <= 100
+si_xtalk_delay_analysis_mode all_paths string all_paths {all_paths all_path_edges}
+si_xtalk_double_switching_mode disabled string disabled {disabled estimation clock_network full_design clock_network_all full_design_all}
+si_xtalk_exit_on_max_iteration_count 2 int 2         val >= 1
+si_xtalk_exit_on_max_iteration_count_incr 2 int 2    val >= 1
+si_xtalk_max_transition_mode uncoupled string uncoupled
+svr_enable_vpp          false     bool    false
+svr_keep_unconnected_nets true    bool    true
+synopsys_program_name   pt_shell  string  pt_shell
+synopsys_root           /opt/synopsys/2016/primetime string /opt/synopsys/2016/primetime
+tcl_interactive         0         string  0
+tcl_library             /opt/synopsys/2016/primetime/auxx/tcllib/lib/tcl8.6 string /opt/synopsys/2016/primetime/auxx/tcllib/lib/tcl8.6
+tcl_pkgPath             /opt/synopsys/2016/primetime/auxx/tcllib/lib/tcl8.6 string /opt/synopsys/2016/primetime/auxx/tcllib/lib/tcl8.6
+timing_all_clocks_propagated false bool   false
+timing_allow_short_path_borrowing false bool false
+timing_aocvm_analysis_mode        string  
+timing_aocvm_enable_analysis false bool   false
+timing_aocvm_enable_clock_network_only false bool false
+timing_aocvm_enable_single_path_metrics false bool false
+timing_aocvm_ocv_precedence_compatibility false bool false
+timing_bidirectional_pin_max_transition_checks both string both {both driver load}
+timing_calculation_across_broken_hierarchy_compatibility false bool false
+timing_check_defaults   generated_clocks generic latch_fanout loops no_clock no_input_delay partial_input_delay unconstrained_endpoints unexpandable_clocks no_driving_cell pulse_clock_non_pulse_clock_merge pll_configuration string generated_clocks generic latch_fanout loops no_clock no_input_delay partial_input_delay unconstrained_endpoints unexpandable_clocks no_driving_cell pulse_clock_non_pulse_clock_merge pll_configuration
+timing_clock_gating_check_fanout_compatibility false bool false
+timing_clock_gating_propagate_enable true bool true
+timing_clock_reconvergence_pessimism normal string normal {normal same_transition}
+timing_crpr_remove_clock_to_data_crp false bool false
+timing_crpr_remove_muxed_clock_crp true bool true
+timing_crpr_threshold_ps 5        real    5          val >= 0
+timing_disable_bus_contention_check false bool false
+timing_disable_clock_gating_checks false bool false
+timing_disable_cond_default_arcs false bool false
+timing_disable_floating_bus_check false bool false
+timing_disable_internal_inout_cell_paths true bool true
+timing_disable_internal_inout_net_arcs true bool true
+timing_disable_recovery_removal_checks false bool false
+timing_early_launch_at_borrowing_latches true bool true
+timing_enable_auto_mux_clock_exclusivity false bool false
+timing_enable_clock_propagation_through_preset_clear false bool false
+timing_enable_clock_propagation_through_three_state_enable_pins false bool false
+timing_enable_constraint_variation false bool false
+timing_enable_cross_voltage_domain_analysis false bool false
+timing_enable_cumulative_incremental_derate false bool false
+timing_enable_library_max_cap_lookup_table true bool true
+timing_enable_max_cap_precedence false bool false
+timing_enable_max_capacitance_set_case_analysis false bool false
+timing_enable_max_transition_set_case_analysis false bool false
+timing_enable_normalized_slack false bool false
+timing_enable_preset_clear_arcs false bool false
+timing_enable_pulse_clock_constraints true bool true
+timing_enable_slew_variation false bool   false
+timing_enable_through_paths false bool    false
+timing_gclock_source_network_num_master_registers 10000000 int 10000000
+timing_ideal_clock_zero_default_transition true bool true
+timing_include_available_borrow_in_slack false bool false
+timing_include_uncertainty_for_pulse_checks setup_hold string setup_hold
+timing_input_port_default_clock false bool false
+timing_keep_loop_breaking_disabled_arcs false bool false
+timing_keep_waveform_on_points false bool false
+timing_lib_cell_derived_clock_name_compatibility true bool true
+timing_library_max_cap_from_lookup_table false bool false
+timing_max_capacitance_derate 1   real    1          1 <= val <= 10
+timing_max_normalization_cycles 4 int     4
+timing_max_transition_derate 1    real    1          1 <= val <= 1.5
+timing_ocvm_enable_distance_analysis true bool true
+timing_ocvm_precedence_compatibility false bool false
+timing_path_arrival_required_attribute_include_clock_edge false bool false
+timing_pocvm_corner_sigma 3       real    3
+timing_pocvm_enable_analysis false bool   false
+timing_pocvm_enable_extrapolation_warning false bool false
+timing_pocvm_precedence file      string  file
+timing_pocvm_report_sigma 3       real    3
+timing_pocvm_use_normalized_reporting true bool true
+timing_prelayout_scaling true     bool    true
+timing_propagate_interclock_uncertainty false bool false
+timing_propagate_through_non_latch_d_pin_arcs false bool false
+timing_reduce_multi_drive_net_arcs false bool false
+timing_reduce_multi_drive_net_arcs_threshold 10000 int 10000
+timing_reduce_parallel_cell_arcs true bool true
+timing_remove_clock_reconvergence_pessimism true bool true
+timing_report_always_use_valid_start_end_points false bool false
+timing_report_fixed_width_columns_on_left false bool false
+timing_report_hyperscale_stub_pin_paths true bool true
+timing_report_maxpaths_nworst_reached false bool false
+timing_report_recalculation_status low string low    {none low medium high}
+timing_report_skip_early_paths_at_intermediate_latches false bool false
+timing_report_status_level none   string  none       {none low medium high}
+timing_report_unconstrained_paths false bool false
+timing_report_union_tns true      bool    true
+timing_report_use_worst_parallel_cell_arc true bool true
+timing_save_block_level_reporting_data false bool false
+timing_save_hyperscale_context_data true bool true
+timing_save_hyperscale_model_data false bool false
+timing_save_pin_arrival_and_required false bool false
+timing_save_pin_arrival_and_slack false bool false
+timing_separate_hyperscale_side_inputs false bool false
+timing_simultaneous_clock_data_port_compatibility false bool false
+timing_single_edge_clock_gating_backward_compatibility false bool false
+timing_slew_threshold_scaling_for_max_transition_compatibility false bool false
+timing_through_path_max_segments 5 int    5
+timing_update_effort    medium    string  medium     {low medium high}
+timing_update_status_level none   string  none       {none low medium high}
+timing_use_constraint_derates_for_pulse_checks false bool false
+timing_use_zero_slew_for_annotated_arcs auto string auto {never auto always}
+upf_allow_DD_primary_with_supply_sets false bool false
+upf_create_implicit_supply_sets true bool true
+upf_name_map            none      string  none
+upf_power_switches_always_on false bool   false
+upf_use_driver_receiver_for_io_voltages false bool false
+upf_wscript_retain_object_name_scope false bool false
+variation_derived_scalar_attribute_mode quantile string quantile {none mean quantile}
+variation_report_timing_increment_format effective_delay string effective_delay {effective_delay delay_variation}
+write_script_include_library_constraints true bool true
+write_script_output_lumped_net_annotation false bool false

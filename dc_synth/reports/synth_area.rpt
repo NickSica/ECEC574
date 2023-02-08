@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 12:31:48 2023
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                          460
+Number of nets:                          1314
+Number of cells:                          832
+Number of combinational cells:            598
+Number of sequential cells:               229
+Number of macros/black boxes:               0
+Number of buf/inv:                        102
+Number of references:                      22
+
+Combinational area:               1488.013136
+Buf/Inv area:                      131.900737
+Noncombinational area:            1564.510504
+Macro/Black Box area:                0.000000
+Net Interconnect area:             643.190597
+
+Total cell area:                  3052.523640
+Total area:                       3695.714237
+1

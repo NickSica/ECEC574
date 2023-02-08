@@ -1,0 +1,61 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 11:48:03 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FIFO                   8000              saed32rvt_ss0p95v25c
+FIFO_MEM_BLK           8000              saed32rvt_ss0p95v25c
+FIFO_DW01_dec_1        8000              saed32rvt_ss0p95v25c
+FIFO_DW01_inc_3        8000              saed32rvt_ss0p95v25c
+FIFO_DW01_inc_5        8000              saed32rvt_ss0p95v25c
+FIFO_DW01_inc_6        8000              saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  29.9927 uW  (100%)
+                         ---------
+Total Dynamic Power    =  29.9927 uW  (100%)
+
+Cell Leakage Power     = 129.6669 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            2.0697        3.4621e+07           36.6903  (  22.98%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           27.9231        9.5046e+07          122.9693  (  77.02%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        29.9927 uW     1.2967e+08 pW       159.6596 uW
+1

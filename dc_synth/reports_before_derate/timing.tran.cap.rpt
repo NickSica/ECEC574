@@ -1,0 +1,91 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -input_pins
+        -nets
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : FIFO
+Version: M-2016.12-SP1
+Date   : Wed Feb  1 11:48:03 2023
+****************************************
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rd_ptr_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: rd_ptr_reg[28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIFO               8000                  saed32rvt_ss0p95v25c
+  FIFO_DW01_inc_5    8000                  saed32rvt_ss0p95v25c
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                               0.00       0.00
+  clock network delay (ideal)                                  0.00       0.00
+  rd_ptr_reg[0]/CLK (DFFARX1_RVT)                    0.00      0.00       0.00 r
+  rd_ptr_reg[0]/Q (DFFARX1_RVT)                      0.03      0.18       0.18 r
+  rd_ptr[0] (net)                2         0.94                0.00       0.18 r
+  add_88/A[0] (FIFO_DW01_inc_5)                                0.00       0.18 r
+  add_88/A[0] (net)                        0.94                0.00       0.18 r
+  add_88/U51/A (INVX0_RVT)                           0.03      0.05       0.23 r
+  add_88/U51/Y (INVX0_RVT)                           0.03      0.03       0.26 f
+  add_88/n97 (net)               2         1.11                0.00       0.26 f
+  add_88/U22/A2 (OR2X1_RVT)                          0.03      0.06       0.32 f
+  add_88/U22/Y (OR2X1_RVT)                           0.02      0.05       0.38 f
+  add_88/n62 (net)               2         1.02                0.00       0.38 f
+  add_88/U33/A3 (OR4X2_RVT)                          0.02      0.06       0.43 f
+  add_88/U33/Y (OR4X2_RVT)                           0.02      0.14       0.57 f
+  add_88/n84 (net)               2         1.12                0.00       0.57 f
+  add_88/U30/A1 (OR2X1_RVT)                          0.02      0.06       0.63 f
+  add_88/U30/Y (OR2X1_RVT)                           0.02      0.06       0.69 f
+  add_88/n70 (net)               2         1.09                0.00       0.69 f
+  add_88/U29/A (NBUFFX2_RVT)                         0.02      0.06       0.75 f
+  add_88/U29/Y (NBUFFX2_RVT)                         0.02      0.05       0.79 f
+  add_88/n15 (net)               2         0.99                0.00       0.79 f
+  add_88/U28/A2 (OR2X1_RVT)                          0.02      0.05       0.85 f
+  add_88/U28/Y (OR2X1_RVT)                           0.02      0.05       0.90 f
+  add_88/n69 (net)               2         1.02                0.00       0.90 f
+  add_88/U99/A (INVX0_RVT)                           0.02      0.06       0.96 f
+  add_88/U99/Y (INVX0_RVT)                           0.02      0.03       0.98 r
+  add_88/n66 (net)               2         1.05                0.00       0.98 r
+  add_88/U98/A (NBUFFX2_RVT)                         0.02      0.06       1.04 r
+  add_88/U98/Y (NBUFFX2_RVT)                         0.02      0.05       1.09 r
+  add_88/n46 (net)               2         0.90                0.00       1.09 r
+  add_88/U23/A1 (AND3X1_RVT)                         0.02      0.05       1.14 r
+  add_88/U23/Y (AND3X1_RVT)                          0.03      0.06       1.20 r
+  add_88/n41 (net)               1         0.88                0.00       1.20 r
+  add_88/U65/A1 (XOR2X1_RVT)                         0.03      0.02       1.22 r
+  add_88/U65/Y (XOR2X1_RVT)                          0.04      0.12       1.34 f
+  add_88/SUM[28] (net)           1         0.44                0.00       1.34 f
+  add_88/SUM[28] (FIFO_DW01_inc_5)                             0.00       1.34 f
+  N76 (net)                                0.44                0.00       1.34 f
+  U471/A1 (AO22X1_RVT)                               0.04      0.01       1.35 f
+  U471/Y (AO22X1_RVT)                                0.02      0.08       1.43 f
+  n115 (net)                     1         0.50                0.00       1.43 f
+  rd_ptr_reg[28]/D (DFFARX1_RVT)                     0.02      0.01       1.44 f
+  data arrival time                                                       1.44
+
+  clock ideal_clock1 (rise edge)                               1.00       1.00
+  clock network delay (ideal)                                  0.00       1.00
+  clock uncertainty                                           -0.10       0.90
+  rd_ptr_reg[28]/CLK (DFFARX1_RVT)                             0.00       0.90 r
+  library setup time                                          -0.06       0.84
+  data required time                                                      0.84
+  -------------------------------------------------------------------------------
+  data required time                                                      0.84
+  data arrival time                                                      -1.44
+  -------------------------------------------------------------------------------
+  slack (VIOLATED)                                                       -0.60
+
+
+1
