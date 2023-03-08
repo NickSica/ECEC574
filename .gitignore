@@ -1,0 +1,9 @@
+**/outputs
+**/reports*
+**/const
+**/work
+**/logs
+**/*.log
+**/*.svf
+**/*.txt
+**/*.mw
