@@ -1,4 +1,4 @@
-outputs
+output
 reports*
 const
 work
@@ -7,3 +7,6 @@ logs
 *.svf
 *.txt
 *.mw
+*.mr
+*.pvl
+*.syn
