@@ -1,0 +1,153 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+No paths with slack less than 0.00.
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+No paths with slack less than 0.00.
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+No paths with slack less than 0.00.
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 0.00
+	-max_paths 20
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+No paths with slack less than 0.00.
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+
+  Startpoint: DFF_1/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_3/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  DFF_1/q_reg/CLK (DFFX1_RVT)              0.00       0.40 r
+  DFF_1/q_reg/QN (DFFX1_RVT)               0.20       0.60 r
+  U85/Y (AND3X1_RVT)                       1.99       2.59 r
+  U88/Y (NAND3X0_RVT)                      0.36       2.95 f
+  U69/Y (OR2X1_RVT)                        0.14       3.09 f
+  U122/Y (OA22X1_RVT)                      0.14       3.23 f
+  U123/Y (NAND2X0_RVT)                     0.05       3.28 r
+  DFF_3/q_reg/D (DFFX1_RVT)                0.01       3.30 r
+  data arrival time                                   3.30
+
+  clock ideal_clock1 (rise edge)          10.00      10.00
+  clock network delay (ideal)              0.40      10.40
+  clock reconvergence pessimism            0.00      10.40
+  clock uncertainty                       -0.05      10.35
+  DFF_3/q_reg/CLK (DFFX1_RVT)                        10.35 r
+  library setup time                      -0.05      10.30
+  data required time                                 10.30
+  ---------------------------------------------------------------
+  data required time                                 10.30
+  data arrival time                                  -3.30
+  ---------------------------------------------------------------
+  slack (MET)                                         7.00
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+
+  Startpoint: DFF_0/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_0/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  DFF_0/q_reg/CLK (DFFX1_RVT)              0.00       0.40 r
+  DFF_0/q_reg/Q (DFFX1_RVT)                0.18       0.58 f
+  U99/Y (NAND4X0_RVT)                      0.18       0.76 r
+  U102/Y (NAND2X0_RVT)                     0.10       0.86 f
+  DFF_0/q_reg/D (DFFX1_RVT)                0.01       0.87 f
+  data arrival time                                   0.87
+
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  clock reconvergence pessimism            0.00       0.40
+  clock uncertainty                        0.05       0.45
+  DFF_0/q_reg/CLK (DFFX1_RVT)                         0.45 r
+  library hold time                       -0.00       0.45
+  data required time                                  0.45
+  ---------------------------------------------------------------
+  data required time                                  0.45
+  data arrival time                                  -0.87
+  ---------------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+1

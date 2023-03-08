@@ -1,0 +1,42 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Wed Mar  1 18:52:06 2023
+****************************************
+
+
+  Startpoint: v5 (input port clocked by ideal_clock1)
+  Endpoint: v13_D_10 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  v5 (in)                                  0.00       2.00 r
+  U187/Y (AO21X1_RVT)                      0.46       2.46 r
+  U188/Y (AND3X1_RVT)                      0.07       2.53 r
+  v13_D_10 (out)                           0.01       2.54 r
+  data arrival time                                   2.54
+
+  clock ideal_clock1 (rise edge)           2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  clock reconvergence pessimism            0.00       2.00
+  clock uncertainty                       -0.05       1.95
+  output external delay                   -2.00      -0.05
+  data required time                                 -0.05
+  ---------------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -2.54
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -2.59
+
+
+1

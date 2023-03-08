@@ -3,15 +3,15 @@
   Report : Chip Summary
   Design : FIFO
   Version: Q-2019.12
-  Date   : Wed Feb  8 09:31:34 2023
+  Date   : Wed Mar  8 10:30:04 2023
 ****************************************
-Std cell utilization: 60.47%  (11912/(19698-0))
+Std cell utilization: 59.21%  (11821/(19965-0))
 (Non-fixed + Fixed)
-Std cell utilization: 60.47%  (11912/(19698-0))
+Std cell utilization: 59.21%  (11821/(19965-0))
 (Non-fixed only)
-Chip area:            19698    sites, bbox (5.00 5.00 76.29 75.22) um
-Std cell area:        11912    sites, (non-fixed:11912  fixed:0)
-                      795      cells, (non-fixed:795    fixed:0)
+Chip area:            19965    sites, bbox (10.00 10.00 101.96 65.18) um
+Std cell area:        11821    sites, (non-fixed:11821  fixed:0)
+                      779      cells, (non-fixed:779    fixed:0)
 Macro cell area:      0        sites
                       0        cells
 Placement blockages:  0        sites, (excluding fixed std cells)
@@ -19,9 +19,9 @@ Placement blockages:  0        sites, (excluding fixed std cells)
                       0        sites, (complete p/g net blockages)
 Routing blockages:    0        sites, (partial p/g net blockages)
                       0        sites, (routing blockages and signal pre-route)
-Lib cell count:       26 
+Lib cell count:       29 
 Avg. std cell width:  1.82 um 
-Site array:           unit     (width: 0.152 um, height: 1.672 um, rows: 42)
+Site array:           unit     (width: 0.152 um, height: 1.672 um, rows: 33)
 Physical DB scale:    1000 db_unit = 1 um 
 
  
@@ -29,7 +29,7 @@ Physical DB scale:    1000 db_unit = 1 um
   Report : pnet options
   Design : FIFO
   Version: Q-2019.12
-  Date   : Wed Feb  8 09:31:34 2023
+  Date   : Wed Mar  8 10:30:04 2023
 ****************************************
 
 
@@ -53,9 +53,9 @@ MRDL       none          ---         ---       via additive      ---
 Number of regions with placement utilization 0 - 0.125 is 0 (0.00%)
 Number of regions with placement utilization 0.125 - 0.25 is 0 (0.00%)
 Number of regions with placement utilization 0.25 - 0.375 is 0 (0.00%)
-Number of regions with placement utilization 0.375 - 0.5 is 1 (1.23%)
-Number of regions with placement utilization 0.5 - 0.625 is 56 (69.14%)
-Number of regions with placement utilization 0.625 - 0.75 is 22 (27.16%)
-Number of regions with placement utilization 0.75 - 0.875 is 2 (2.47%)
+Number of regions with placement utilization 0.375 - 0.5 is 2 (2.60%)
+Number of regions with placement utilization 0.5 - 0.625 is 56 (72.73%)
+Number of regions with placement utilization 0.625 - 0.75 is 19 (24.68%)
+Number of regions with placement utilization 0.75 - 0.875 is 0 (0.00%)
 Number of regions with placement utilization 0.875 - 1 is 0 (0.00%)
 1

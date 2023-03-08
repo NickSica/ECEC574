@@ -1,0 +1,63 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+
+  Startpoint: DFF_1/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_3/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                  0.10       0.00       0.00
+  clock network delay (ideal)                                0.40       0.40
+  DFF_1/q_reg/CLK (DFFX1_RVT)                     0.10       0.00       0.40 r
+  DFF_1/q_reg/QN (DFFX1_RVT)                      0.09       0.20       0.60 r
+  n106 (net)                     9     7.48 
+  U85/A3 (AND3X1_RVT)                             0.09       1.89       2.49 r
+  U85/Y (AND3X1_RVT)                              0.05       0.10       2.59 r
+  n88 (net)                      4     3.18 
+  U88/A1 (NAND3X0_RVT)                            0.05       0.30       2.88 r
+  U88/Y (NAND3X0_RVT)                             0.08       0.07       2.95 f
+  n90 (net)                      2     1.63 
+  U69/A2 (OR2X1_RVT)                              0.08       0.07       3.02 f
+  U69/Y (OR2X1_RVT)                               0.03       0.07       3.09 f
+  n93 (net)                      2     1.54 
+  U122/A2 (OA22X1_RVT)                            0.03       0.06       3.15 f
+  U122/Y (OA22X1_RVT)                             0.03       0.07       3.23 f
+  n94 (net)                      1     0.70 
+  U123/A1 (NAND2X0_RVT)                           0.03       0.01       3.24 f
+  U123/Y (NAND2X0_RVT)                            0.04       0.04       3.28 r
+  Lv13_D_2 (net)                 1     0.75 
+  DFF_3/q_reg/D (DFFX1_RVT)                       0.04       0.01       3.30 r
+  data arrival time                                                     3.30
+
+  clock ideal_clock1 (rise edge)                  0.10      10.00      10.00
+  clock network delay (ideal)                                0.40      10.40
+  clock reconvergence pessimism                              0.00      10.40
+  clock uncertainty                                         -0.05      10.35
+  DFF_3/q_reg/CLK (DFFX1_RVT)                                          10.35 r
+  library setup time                                        -0.05      10.30
+  data required time                                                   10.30
+  -----------------------------------------------------------------------------
+  data required time                                                   10.30
+  data arrival time                                                    -3.30
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           7.00
+
+
+1

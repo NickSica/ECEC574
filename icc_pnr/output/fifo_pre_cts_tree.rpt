@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : clock tree
+Design : FIFO
+Version: Q-2019.12
+Date   : Wed Mar  8 10:30:04 2023
+****************************************
+
+
+============ Global Skew Report ================
+
+Clock Tree Name                : "ideal_clock1"
+Clock Period                   : 15.20000       
+Clock Tree root pin            : "Clk"
+Number of Levels               : 1
+Number of Sinks                : 229
+Number of CT Buffers           : 0
+Number of CTS added gates      : 0
+Number of Preexisting Gates    : 0
+Number of Preexisting Buf/Inv  : 0
+Total Number of Clock Cells    : 0
+Total Area of CT Buffers       : 0.00000        
+Total Area of CT cells         : 0.00000        
+Max Global Skew                : 0.01916   
+Number of MaxTran Violators    : 0
+Number of MaxCap Violators     : 0
+Number of MaxFanout Violators  : 0
+
+
+Operating Condition               worst
+Clock global Skew                 0.019
+Longest path delay                0.028
+Shortest path delay               0.009
+
+The longest path delay end pin: memblk/FIFO_reg[3][26]/CLK
+The shortest path delay end pin: fcounter_reg[10]/CLK
+
+The longest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+Clk                                         0.000            1  0.000     0.000     0.000     r
+Clk                                         234.187        229  0.000     0.000     0.000     r
+memblk/FIFO_reg[3][26]/CLK                  234.187          0  0.039     0.028     0.028     r
+[clock delay]                                                                       0.028
+----------------------------------------------------------------------------------------------------
+
+The Shortest Path:
+Pin                                         Cap       Fanout    Trans     Incr      Arri
+----------------------------------------------------------------------------------------------------
+Clk                                         0.000            1  0.000     0.000     0.000     r
+Clk                                         234.187        229  0.000     0.000     0.000     r
+fcounter_reg[10]/CLK                        234.187          0  0.013     0.009     0.009     r
+[clock delay]                                                                       0.009
+----------------------------------------------------------------------------------------------------
+
+1

@@ -1,0 +1,55 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : s35932
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:25 2023
+****************************************
+
+Warning: There is 1 invalid end point for constrained paths. (UITE-416)
+
+  Startpoint: DFF_1343/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_1323/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                  0.10       0.00       0.00
+  clock network delay (ideal)                                0.40       0.40
+  DFF_1343/q_reg/CLK (DFFX1_RVT)                  0.10       0.00       0.40 r
+  DFF_1343/q_reg/QN (DFFX1_RVT)                   0.08       0.18       0.58 f
+  n3272 (net)                    5     6.26 
+  U6520/B (FADDX1_RVT)                            0.08       1.02       1.60 f
+  U6520/S (FADDX1_RVT)                            0.04       0.15       1.75 r
+  n3259 (net)                    1     0.53 
+  U6521/A1 (AND2X1_RVT)                           0.04       0.01       1.76 r
+  U6521/Y (AND2X1_RVT)                            0.02       0.05       1.81 r
+  WX9044 (net)                   1     0.51 
+  DFF_1323/q_reg/D (DFFX1_RVT)                    0.02       0.01       1.82 r
+  data arrival time                                                     1.82
+
+  clock ideal_clock1 (rise edge)                  0.10      10.00      10.00
+  clock network delay (ideal)                                0.40      10.40
+  clock reconvergence pessimism                              0.00      10.40
+  clock uncertainty                                         -0.05      10.35
+  DFF_1323/q_reg/CLK (DFFX1_RVT)                                       10.35 r
+  library setup time                                        -0.04      10.31
+  data required time                                                   10.31
+  -----------------------------------------------------------------------------
+  data required time                                                   10.31
+  data arrival time                                                    -1.82
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           8.48
+
+
+1

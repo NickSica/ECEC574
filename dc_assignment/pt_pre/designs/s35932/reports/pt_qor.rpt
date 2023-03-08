@@ -1,0 +1,52 @@
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+Warning: Some timing arcs have been disabled for breaking timing loops or because of constant propagation. Use the 'report_disable_timing' command to get the list of these disabled timing arcs. (PTE-003)
+****************************************
+Report : qor
+Design : s35932
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:25 2023
+****************************************
+
+  Timing Path Group 'ideal_clock1' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                           10
+  Critical Path Length:                   10.34
+  Critical Path Slack:                    -0.04
+  Total Negative Slack:                   -0.39
+  No. of Violating Paths:                    41
+  ---------------------------------------------
+
+  Timing Path Group 'ideal_clock1' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            2
+  Critical Path Length:                    0.64
+  Critical Path Slack:                     0.18
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                    0
+  Hierarchical Port Count:                    0
+  Leaf Cell Count:                         5002
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                4968.31
+  Total cell area:                     19839.39
+  Design Area:                         24807.70
+  Area Cost:                          -24807.70
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:            19384
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

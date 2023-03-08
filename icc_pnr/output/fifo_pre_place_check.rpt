@@ -1,0 +1,18 @@
+Warning: You are using the old usage model. All the old options will be obsoleted in next release and are no supported any more.
+Please check manpage for the new feature and usage model.
+
+--------------------------------
+check_physical_design: Prelude
+--------------------------------
+Summary: 0 errors, 922 warnings
+
+--------------------------------------
+check_physical_design: Results Summary
+--------------------------------------
+
+  --------------------
+  Check		Result
+  --------------------
+  Prelude	 PASS
+  --------------------
+1

@@ -1,0 +1,49 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : s15850
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:20 2023
+****************************************
+
+
+  Startpoint: g109 (input port clocked by ideal_clock1)
+  Endpoint: DFF_10/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 r
+  g109 (in)                                0.00       2.00 r
+  U1702/Y (INVX1_RVT)                      4.66       6.66 f
+  U1679/Y (NBUFFX2_RVT)                    0.35       7.00 f
+  U1628/Y (AO21X1_RVT)                     1.47       8.48 f
+  U1478/Y (INVX0_RVT)                      0.70       9.17 r
+  U1473/Y (INVX0_RVT)                      0.19       9.36 f
+  U1594/Y (INVX1_RVT)                      0.53       9.89 r
+  U2588/Y (AO22X1_RVT)                     0.46      10.35 r
+  DFF_10/q_reg/D (DFFX1_RVT)               0.01      10.37 r
+  data arrival time                                  10.37
+
+  clock ideal_clock1 (rise edge)          10.00      10.00
+  clock network delay (ideal)              0.40      10.40
+  clock reconvergence pessimism            0.00      10.40
+  clock uncertainty                       -0.05      10.35
+  DFF_10/q_reg/CLK (DFFX1_RVT)                       10.35 r
+  library setup time                      -0.05      10.30
+  data required time                                 10.30
+  ---------------------------------------------------------------
+  data required time                                 10.30
+  data arrival time                                 -10.37
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -0.06
+
+
+1

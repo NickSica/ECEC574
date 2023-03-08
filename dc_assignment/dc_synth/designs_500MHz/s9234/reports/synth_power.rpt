@@ -1,0 +1,267 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : s9234
+Version: M-2016.12-SP1
+Date   : Wed Mar  1 10:41:49 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+s9234                  8000              saed32rvt_ss0p95v25c
+dff_210                ForQA             saed32rvt_ss0p95v25c
+dff_0                  ForQA             saed32rvt_ss0p95v25c
+dff_1                  ForQA             saed32rvt_ss0p95v25c
+dff_2                  ForQA             saed32rvt_ss0p95v25c
+dff_3                  ForQA             saed32rvt_ss0p95v25c
+dff_4                  ForQA             saed32rvt_ss0p95v25c
+dff_5                  ForQA             saed32rvt_ss0p95v25c
+dff_6                  ForQA             saed32rvt_ss0p95v25c
+dff_7                  ForQA             saed32rvt_ss0p95v25c
+dff_8                  ForQA             saed32rvt_ss0p95v25c
+dff_9                  ForQA             saed32rvt_ss0p95v25c
+dff_10                 ForQA             saed32rvt_ss0p95v25c
+dff_11                 ForQA             saed32rvt_ss0p95v25c
+dff_12                 ForQA             saed32rvt_ss0p95v25c
+dff_13                 ForQA             saed32rvt_ss0p95v25c
+dff_14                 ForQA             saed32rvt_ss0p95v25c
+dff_15                 ForQA             saed32rvt_ss0p95v25c
+dff_16                 ForQA             saed32rvt_ss0p95v25c
+dff_17                 ForQA             saed32rvt_ss0p95v25c
+dff_18                 ForQA             saed32rvt_ss0p95v25c
+dff_19                 ForQA             saed32rvt_ss0p95v25c
+dff_20                 ForQA             saed32rvt_ss0p95v25c
+dff_21                 ForQA             saed32rvt_ss0p95v25c
+dff_22                 ForQA             saed32rvt_ss0p95v25c
+dff_23                 ForQA             saed32rvt_ss0p95v25c
+dff_24                 ForQA             saed32rvt_ss0p95v25c
+dff_25                 ForQA             saed32rvt_ss0p95v25c
+dff_26                 ForQA             saed32rvt_ss0p95v25c
+dff_27                 ForQA             saed32rvt_ss0p95v25c
+dff_28                 ForQA             saed32rvt_ss0p95v25c
+dff_29                 ForQA             saed32rvt_ss0p95v25c
+dff_30                 ForQA             saed32rvt_ss0p95v25c
+dff_31                 ForQA             saed32rvt_ss0p95v25c
+dff_32                 ForQA             saed32rvt_ss0p95v25c
+dff_33                 ForQA             saed32rvt_ss0p95v25c
+dff_34                 ForQA             saed32rvt_ss0p95v25c
+dff_35                 ForQA             saed32rvt_ss0p95v25c
+dff_36                 ForQA             saed32rvt_ss0p95v25c
+dff_37                 ForQA             saed32rvt_ss0p95v25c
+dff_38                 ForQA             saed32rvt_ss0p95v25c
+dff_39                 ForQA             saed32rvt_ss0p95v25c
+dff_40                 ForQA             saed32rvt_ss0p95v25c
+dff_41                 ForQA             saed32rvt_ss0p95v25c
+dff_42                 ForQA             saed32rvt_ss0p95v25c
+dff_43                 ForQA             saed32rvt_ss0p95v25c
+dff_44                 ForQA             saed32rvt_ss0p95v25c
+dff_45                 ForQA             saed32rvt_ss0p95v25c
+dff_46                 ForQA             saed32rvt_ss0p95v25c
+dff_47                 ForQA             saed32rvt_ss0p95v25c
+dff_48                 ForQA             saed32rvt_ss0p95v25c
+dff_49                 ForQA             saed32rvt_ss0p95v25c
+dff_50                 ForQA             saed32rvt_ss0p95v25c
+dff_51                 ForQA             saed32rvt_ss0p95v25c
+dff_52                 ForQA             saed32rvt_ss0p95v25c
+dff_53                 ForQA             saed32rvt_ss0p95v25c
+dff_54                 ForQA             saed32rvt_ss0p95v25c
+dff_55                 ForQA             saed32rvt_ss0p95v25c
+dff_56                 ForQA             saed32rvt_ss0p95v25c
+dff_57                 ForQA             saed32rvt_ss0p95v25c
+dff_58                 ForQA             saed32rvt_ss0p95v25c
+dff_59                 ForQA             saed32rvt_ss0p95v25c
+dff_60                 ForQA             saed32rvt_ss0p95v25c
+dff_61                 ForQA             saed32rvt_ss0p95v25c
+dff_62                 ForQA             saed32rvt_ss0p95v25c
+dff_63                 ForQA             saed32rvt_ss0p95v25c
+dff_64                 ForQA             saed32rvt_ss0p95v25c
+dff_65                 ForQA             saed32rvt_ss0p95v25c
+dff_66                 ForQA             saed32rvt_ss0p95v25c
+dff_67                 ForQA             saed32rvt_ss0p95v25c
+dff_68                 ForQA             saed32rvt_ss0p95v25c
+dff_69                 ForQA             saed32rvt_ss0p95v25c
+dff_70                 ForQA             saed32rvt_ss0p95v25c
+dff_71                 ForQA             saed32rvt_ss0p95v25c
+dff_72                 ForQA             saed32rvt_ss0p95v25c
+dff_73                 ForQA             saed32rvt_ss0p95v25c
+dff_74                 ForQA             saed32rvt_ss0p95v25c
+dff_75                 ForQA             saed32rvt_ss0p95v25c
+dff_76                 ForQA             saed32rvt_ss0p95v25c
+dff_77                 ForQA             saed32rvt_ss0p95v25c
+dff_78                 ForQA             saed32rvt_ss0p95v25c
+dff_79                 ForQA             saed32rvt_ss0p95v25c
+dff_80                 ForQA             saed32rvt_ss0p95v25c
+dff_81                 ForQA             saed32rvt_ss0p95v25c
+dff_82                 ForQA             saed32rvt_ss0p95v25c
+dff_83                 ForQA             saed32rvt_ss0p95v25c
+dff_84                 ForQA             saed32rvt_ss0p95v25c
+dff_85                 ForQA             saed32rvt_ss0p95v25c
+dff_86                 ForQA             saed32rvt_ss0p95v25c
+dff_87                 ForQA             saed32rvt_ss0p95v25c
+dff_88                 ForQA             saed32rvt_ss0p95v25c
+dff_89                 ForQA             saed32rvt_ss0p95v25c
+dff_90                 ForQA             saed32rvt_ss0p95v25c
+dff_91                 ForQA             saed32rvt_ss0p95v25c
+dff_92                 ForQA             saed32rvt_ss0p95v25c
+dff_93                 ForQA             saed32rvt_ss0p95v25c
+dff_94                 ForQA             saed32rvt_ss0p95v25c
+dff_95                 ForQA             saed32rvt_ss0p95v25c
+dff_96                 ForQA             saed32rvt_ss0p95v25c
+dff_97                 ForQA             saed32rvt_ss0p95v25c
+dff_98                 ForQA             saed32rvt_ss0p95v25c
+dff_99                 ForQA             saed32rvt_ss0p95v25c
+dff_100                ForQA             saed32rvt_ss0p95v25c
+dff_101                ForQA             saed32rvt_ss0p95v25c
+dff_102                ForQA             saed32rvt_ss0p95v25c
+dff_103                ForQA             saed32rvt_ss0p95v25c
+dff_104                ForQA             saed32rvt_ss0p95v25c
+dff_105                ForQA             saed32rvt_ss0p95v25c
+dff_106                ForQA             saed32rvt_ss0p95v25c
+dff_107                ForQA             saed32rvt_ss0p95v25c
+dff_108                ForQA             saed32rvt_ss0p95v25c
+dff_109                ForQA             saed32rvt_ss0p95v25c
+dff_110                ForQA             saed32rvt_ss0p95v25c
+dff_111                ForQA             saed32rvt_ss0p95v25c
+dff_112                ForQA             saed32rvt_ss0p95v25c
+dff_113                ForQA             saed32rvt_ss0p95v25c
+dff_114                ForQA             saed32rvt_ss0p95v25c
+dff_115                ForQA             saed32rvt_ss0p95v25c
+dff_116                ForQA             saed32rvt_ss0p95v25c
+dff_117                ForQA             saed32rvt_ss0p95v25c
+dff_118                ForQA             saed32rvt_ss0p95v25c
+dff_119                ForQA             saed32rvt_ss0p95v25c
+dff_120                ForQA             saed32rvt_ss0p95v25c
+dff_121                ForQA             saed32rvt_ss0p95v25c
+dff_122                ForQA             saed32rvt_ss0p95v25c
+dff_123                ForQA             saed32rvt_ss0p95v25c
+dff_124                ForQA             saed32rvt_ss0p95v25c
+dff_125                ForQA             saed32rvt_ss0p95v25c
+dff_126                ForQA             saed32rvt_ss0p95v25c
+dff_127                ForQA             saed32rvt_ss0p95v25c
+dff_128                ForQA             saed32rvt_ss0p95v25c
+dff_129                ForQA             saed32rvt_ss0p95v25c
+dff_130                ForQA             saed32rvt_ss0p95v25c
+dff_131                ForQA             saed32rvt_ss0p95v25c
+dff_132                ForQA             saed32rvt_ss0p95v25c
+dff_133                ForQA             saed32rvt_ss0p95v25c
+dff_134                ForQA             saed32rvt_ss0p95v25c
+dff_135                ForQA             saed32rvt_ss0p95v25c
+dff_136                ForQA             saed32rvt_ss0p95v25c
+dff_137                ForQA             saed32rvt_ss0p95v25c
+dff_138                ForQA             saed32rvt_ss0p95v25c
+dff_139                ForQA             saed32rvt_ss0p95v25c
+dff_140                ForQA             saed32rvt_ss0p95v25c
+dff_141                ForQA             saed32rvt_ss0p95v25c
+dff_142                ForQA             saed32rvt_ss0p95v25c
+dff_143                ForQA             saed32rvt_ss0p95v25c
+dff_144                ForQA             saed32rvt_ss0p95v25c
+dff_145                ForQA             saed32rvt_ss0p95v25c
+dff_146                ForQA             saed32rvt_ss0p95v25c
+dff_147                ForQA             saed32rvt_ss0p95v25c
+dff_148                ForQA             saed32rvt_ss0p95v25c
+dff_149                ForQA             saed32rvt_ss0p95v25c
+dff_150                ForQA             saed32rvt_ss0p95v25c
+dff_151                ForQA             saed32rvt_ss0p95v25c
+dff_152                ForQA             saed32rvt_ss0p95v25c
+dff_153                ForQA             saed32rvt_ss0p95v25c
+dff_154                ForQA             saed32rvt_ss0p95v25c
+dff_155                ForQA             saed32rvt_ss0p95v25c
+dff_156                ForQA             saed32rvt_ss0p95v25c
+dff_157                ForQA             saed32rvt_ss0p95v25c
+dff_158                ForQA             saed32rvt_ss0p95v25c
+dff_159                ForQA             saed32rvt_ss0p95v25c
+dff_160                ForQA             saed32rvt_ss0p95v25c
+dff_161                ForQA             saed32rvt_ss0p95v25c
+dff_162                ForQA             saed32rvt_ss0p95v25c
+dff_163                ForQA             saed32rvt_ss0p95v25c
+dff_164                ForQA             saed32rvt_ss0p95v25c
+dff_165                ForQA             saed32rvt_ss0p95v25c
+dff_166                ForQA             saed32rvt_ss0p95v25c
+dff_167                ForQA             saed32rvt_ss0p95v25c
+dff_168                ForQA             saed32rvt_ss0p95v25c
+dff_169                ForQA             saed32rvt_ss0p95v25c
+dff_170                ForQA             saed32rvt_ss0p95v25c
+dff_171                ForQA             saed32rvt_ss0p95v25c
+dff_172                ForQA             saed32rvt_ss0p95v25c
+dff_173                ForQA             saed32rvt_ss0p95v25c
+dff_174                ForQA             saed32rvt_ss0p95v25c
+dff_175                ForQA             saed32rvt_ss0p95v25c
+dff_176                ForQA             saed32rvt_ss0p95v25c
+dff_177                ForQA             saed32rvt_ss0p95v25c
+dff_178                ForQA             saed32rvt_ss0p95v25c
+dff_179                ForQA             saed32rvt_ss0p95v25c
+dff_180                ForQA             saed32rvt_ss0p95v25c
+dff_181                ForQA             saed32rvt_ss0p95v25c
+dff_182                ForQA             saed32rvt_ss0p95v25c
+dff_183                ForQA             saed32rvt_ss0p95v25c
+dff_184                ForQA             saed32rvt_ss0p95v25c
+dff_185                ForQA             saed32rvt_ss0p95v25c
+dff_186                ForQA             saed32rvt_ss0p95v25c
+dff_187                ForQA             saed32rvt_ss0p95v25c
+dff_188                ForQA             saed32rvt_ss0p95v25c
+dff_189                ForQA             saed32rvt_ss0p95v25c
+dff_190                ForQA             saed32rvt_ss0p95v25c
+dff_191                ForQA             saed32rvt_ss0p95v25c
+dff_192                ForQA             saed32rvt_ss0p95v25c
+dff_193                ForQA             saed32rvt_ss0p95v25c
+dff_194                ForQA             saed32rvt_ss0p95v25c
+dff_195                ForQA             saed32rvt_ss0p95v25c
+dff_196                ForQA             saed32rvt_ss0p95v25c
+dff_197                ForQA             saed32rvt_ss0p95v25c
+dff_198                ForQA             saed32rvt_ss0p95v25c
+dff_199                ForQA             saed32rvt_ss0p95v25c
+dff_200                ForQA             saed32rvt_ss0p95v25c
+dff_201                ForQA             saed32rvt_ss0p95v25c
+dff_202                ForQA             saed32rvt_ss0p95v25c
+dff_203                ForQA             saed32rvt_ss0p95v25c
+dff_204                ForQA             saed32rvt_ss0p95v25c
+dff_205                ForQA             saed32rvt_ss0p95v25c
+dff_206                ForQA             saed32rvt_ss0p95v25c
+dff_207                ForQA             saed32rvt_ss0p95v25c
+dff_208                ForQA             saed32rvt_ss0p95v25c
+dff_209                ForQA             saed32rvt_ss0p95v25c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  15.0381 uW  (100%)
+                         ---------
+Total Dynamic Power    =  15.0381 uW  (100%)
+
+Cell Leakage Power     = 102.4673 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            3.0382        2.9714e+07           32.7520  (  27.87%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           11.9999        7.2754e+07           84.7535  (  72.13%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        15.0381 uW     1.0247e+08 pW       117.5054 uW
+1

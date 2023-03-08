@@ -1,0 +1,37 @@
+ 
+****************************************
+check_design summary:
+Version:     M-2016.12-SP1
+Date:        Mon Mar  6 16:00:53 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     21
+    Unconnected ports (LINT-28)                                     2
+    Feedthrough (LINT-29)                                          16
+    Shorted outputs (LINT-31)                                       3
+--------------------------------------------------------------------------------
+
+Warning: In design 's9234', port 'GND' is not connected to any nets. (LINT-28)
+Warning: In design 's9234', port 'VDD' is not connected to any nets. (LINT-28)
+Warning: In design 's9234', input port 'g22' is connected directly to output port 'g4104'. (LINT-29)
+Warning: In design 's9234', input port 'g23' is connected directly to output port 'g4098'. (LINT-29)
+Warning: In design 's9234', input port 'g32' is connected directly to output port 'g4099'. (LINT-29)
+Warning: In design 's9234', input port 'g36' is connected directly to output port 'g4100'. (LINT-29)
+Warning: In design 's9234', input port 'g37' is connected directly to output port 'g4101'. (LINT-29)
+Warning: In design 's9234', input port 'g38' is connected directly to output port 'g4102'. (LINT-29)
+Warning: In design 's9234', input port 'g39' is connected directly to output port 'g4103'. (LINT-29)
+Warning: In design 's9234', input port 'g40' is connected directly to output port 'g4105'. (LINT-29)
+Warning: In design 's9234', input port 'g41' is connected directly to output port 'g4110'. (LINT-29)
+Warning: In design 's9234', input port 'g42' is connected directly to output port 'g4106'. (LINT-29)
+Warning: In design 's9234', input port 'g44' is connected directly to output port 'g4107'. (LINT-29)
+Warning: In design 's9234', input port 'g45' is connected directly to output port 'g4108'. (LINT-29)
+Warning: In design 's9234', input port 'g46' is connected directly to output port 'g4109'. (LINT-29)
+Warning: In design 's9234', input port 'g47' is connected directly to output port 'g4112'. (LINT-29)
+Warning: In design 's9234', input port 'g564' is connected directly to output port 'g4422'. (LINT-29)
+Warning: In design 's9234', input port 'g705' is connected directly to output port 'g3222'. (LINT-29)
+Warning: In design 's9234', output port 'g3600' is connected directly to output port 'g5137'. (LINT-31)
+Warning: In design 's9234', output port 'g4307' is connected directly to output port 'g5468'. (LINT-31)
+Warning: In design 's9234', output port 'g4321' is connected directly to output port 'g5469'. (LINT-31)
+1

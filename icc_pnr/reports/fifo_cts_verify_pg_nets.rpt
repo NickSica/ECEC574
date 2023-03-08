@@ -1,0 +1,25 @@
+Cell FIFO.err existed already. Delete it ...
+Using [5 x 5] Fat Wire Table for M1
+Using [5 x 5] Fat Wire Table for M2
+Using [5 x 5] Fat Wire Table for M3
+Using [5 x 5] Fat Wire Table for M4
+Using [5 x 5] Fat Wire Table for M5
+Using [5 x 5] Fat Wire Table for M6
+Using [5 x 5] Fat Wire Table for M7
+Using [5 x 5] Fat Wire Table for M8
+Using [3 x 3] Fat Wire Table for M9
+**** WARNING:no default via for layer (CO)
+
+**** WARNING:no default via for layer (CO)
+
+Checking [VSS]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checking [VDD]:
+	There are no floating shapes
+	All the pins are connected.
+	No errors are found.
+Checked 2 nets, 0 have Errors
+Update error cell ...
+1

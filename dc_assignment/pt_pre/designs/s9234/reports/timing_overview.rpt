@@ -1,0 +1,51 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : s9234
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:32 2023
+****************************************
+
+
+  Startpoint: DFF_166/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_5/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  DFF_166/q_reg/CLK (DFFX1_RVT)            0.00       0.40 r
+  DFF_166/q_reg/Q (DFFX1_RVT)              0.17       0.57 f
+  U735/Y (OAI22X1_RVT)                     0.14       0.71 r
+  U736/Y (AO221X1_RVT)                     0.08       0.79 r
+  U737/Y (NOR4X1_RVT)                      0.11       0.90 f
+  U739/Y (NAND4X0_RVT)                     0.09       0.99 r
+  U740/Y (NOR2X0_RVT)                      1.20       2.18 f
+  U461/Y (AND2X1_RVT)                      0.11       2.29 f
+  U453/Y (NBUFFX2_RVT)                     0.21       2.50 f
+  U741/Y (AO22X1_RVT)                      7.73      10.23 f
+  DFF_5/q_reg/D (DFFX1_RVT)                0.01      10.24 f
+  data arrival time                                  10.24
+
+  clock ideal_clock1 (rise edge)          10.00      10.00
+  clock network delay (ideal)              0.40      10.40
+  clock reconvergence pessimism            0.00      10.40
+  clock uncertainty                       -0.05      10.35
+  DFF_5/q_reg/CLK (DFFX1_RVT)                        10.35 r
+  library setup time                      -0.02      10.33
+  data required time                                 10.33
+  ---------------------------------------------------------------
+  data required time                                 10.33
+  data arrival time                                 -10.24
+  ---------------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+1

@@ -1,0 +1,16 @@
+source /opt/synopsys/2016/primetime/admin/setup/.synopsys_pt.setup
+###### Pre-Layout PrimeTime Script #######
+source ../set_env.tcl
+set output_dir designs/$top
+lappend search_path ../dc_synth/$output_dir/output
+file mkdir $output_dir/reports
+file mkdir $output_dir/const
+file mkdir $output_dir/output
+## read the verilog files
+read_verilog $top.v
+## Set top module name
+link_design $top
+## Read in SDC from the synthesis
+read_sdc ../dc_synth/$output_dir/const/$top.sdc
+## Analysis reports
+## Save outputs

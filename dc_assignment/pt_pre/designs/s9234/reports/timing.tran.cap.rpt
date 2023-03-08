@@ -1,0 +1,72 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : s9234
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:32 2023
+****************************************
+
+
+  Startpoint: DFF_166/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: DFF_74/q_reg
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                  0.10       0.00       0.00
+  clock network delay (ideal)                                0.40       0.40
+  DFF_166/q_reg/CLK (DFFX1_RVT)                   0.10       0.00       0.40 r
+  DFF_166/q_reg/Q (DFFX1_RVT)                     0.03       0.17       0.57 f
+  g230 (net)                     2     0.97 
+  U735/A2 (OAI22X1_RVT)                           0.03       0.05       0.63 f
+  U735/Y (OAI22X1_RVT)                            0.02       0.08       0.71 r
+  n549 (net)                     1     0.50 
+  U736/A5 (AO221X1_RVT)                           0.02       0.01       0.72 r
+  U736/Y (AO221X1_RVT)                            0.04       0.07       0.79 r
+  n550 (net)                     1     0.58 
+  U737/A4 (NOR4X1_RVT)                            0.04       0.01       0.81 r
+  U737/Y (NOR4X1_RVT)                             0.02       0.09       0.90 f
+  n552 (net)                     1     0.50 
+  U739/A2 (NAND4X0_RVT)                           0.02       0.01       0.91 f
+  U739/Y (NAND4X0_RVT)                            0.11       0.07       0.99 r
+  n587 (net)                     7     4.08 
+  U740/A1 (NOR2X0_RVT)                            0.11       1.10       2.08 r
+  U740/Y (NOR2X0_RVT)                             0.02       0.10       2.18 f
+  n571 (net)                     2     1.00 
+  U461/A1 (AND2X1_RVT)                            0.02       0.05       2.24 f
+  U461/Y (AND2X1_RVT)                             0.03       0.05       2.29 f
+  n559 (net)                     3     1.56 
+  U453/A (NBUFFX2_RVT)                            0.03       0.14       2.43 f
+  U453/Y (NBUFFX2_RVT)                            0.05       0.07       2.50 f
+  n330 (net)                    16     7.39 
+  U783/A1 (AO22X1_RVT)                            0.05       7.65      10.15 f
+  U783/Y (AO22X1_RVT)                             0.02       0.08      10.23 f
+  g4438 (net)                    1     0.50 
+  DFF_74/q_reg/D (DFFX1_RVT)                      0.02       0.01      10.24 f
+  data arrival time                                                    10.24
+
+  clock ideal_clock1 (rise edge)                  0.10      10.00      10.00
+  clock network delay (ideal)                                0.40      10.40
+  clock reconvergence pessimism                              0.00      10.40
+  clock uncertainty                                         -0.05      10.35
+  DFF_74/q_reg/CLK (DFFX1_RVT)                                         10.35 r
+  library setup time                                        -0.02      10.33
+  data required time                                                   10.33
+  -----------------------------------------------------------------------------
+  data required time                                                   10.33
+  data arrival time                                                   -10.24
+  -----------------------------------------------------------------------------
+  slack (MET)                                                           0.09
+
+
+1

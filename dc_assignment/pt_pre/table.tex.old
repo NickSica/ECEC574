@@ -1,0 +1,29 @@
+\begin{tabular}{| Design | Area | Power | WNS | TNS | Cell Count | Num of violating paths |}
+\caption{500MHz DC logic synthesis results.}
+    \hline
+    s1238.v & 1579.44 & 62.3031 & -3.37 & -56.73 & 655 & 32 \\
+    \hline
+    s15850.v & 9627.03 & 257.2878 & -4.05 & -1138.71 & 2559 & 607 \\
+    \hline
+    s35932.v & 27369.22 & 790.5770 & -2.81 & -3166.87 & 5730 & 2048 \\
+    \hline
+    s386.v & 302.85 & 11.8507 & -2.59 & -20.63 & 121 & 13 \\
+    \hline
+    s9234.v & 4201.83 & 117.5054 & -2.53 & -256.46 & 1230 & 187 \\
+    \hline
+\end{tabular}
+
+\begin{tabular}{| Design | Area | Power | WNS | TNS | Cell Count | Num of violating paths |}
+\caption{100MHz DC logic synthesis results.}
+    \hline
+    s1238.v & 921.60 & 28.3344 & 0.00 & 0.00 & 340 & 0 \\
+    \hline
+    s15850.v & 8627.82 & 198.7317 & -0.07 & -0.60 & 2178 & 9 \\
+    \hline
+    s35932.v & 26290.20 & 547.4183 & -0.08 & -1.29 & 4985 & 35 \\
+    \hline
+    s386.v & 198.59 & 6.5227 & 0.43 & 0.00 & 79 & 0 \\
+    \hline
+    s9234.v & 3845.53 & 95.0364 & 0.13 & 0.00 & 1062 & 0 \\
+    \hline
+\end{tabular}

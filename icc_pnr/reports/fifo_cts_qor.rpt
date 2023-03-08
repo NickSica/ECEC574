@@ -1,17 +1,21 @@
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
  
 ****************************************
 Report : qor
 Design : FIFO
 Version: Q-2019.12
-Date   : Wed Feb  8 09:32:32 2023
+Date   : Wed Mar  8 10:30:28 2023
 ****************************************
 
 
   Timing Path Group 'ideal_clock1'
   -----------------------------------
   Levels of Logic:              32.00
-  Critical Path Length:          2.71
-  Critical Path Slack:          12.32
+  Critical Path Length:          2.76
+  Critical Path Slack:          12.27
   Critical Path Clk Period:     15.20
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -25,12 +29,12 @@ Date   : Wed Feb  8 09:32:32 2023
   -----------------------------------
   Hierarchical Cell Count:          5
   Hierarchical Port Count:        396
-  Leaf Cell Count:                795
-  Buf/Inv Cell Count:              70
-  Buf Cell Count:                  11
-  Inv Cell Count:                  59
+  Leaf Cell Count:                775
+  Buf/Inv Cell Count:              50
+  Buf Cell Count:                   2
+  Inv Cell Count:                  48
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:       566
+  Combinational Cell Count:       546
   Sequential Cell Count:          229
   Macro Count:                      0
   -----------------------------------
@@ -38,24 +42,24 @@ Date   : Wed Feb  8 09:32:32 2023
 
   Area
   -----------------------------------
-  Combinational Area:     1453.449553
+  Combinational Area:     1424.731280
   Noncombinational Area:  1564.510504
-  Buf/Inv Area:             97.337153
-  Total Buffer Area:            22.36
-  Total Inverter Area:          74.97
+  Buf/Inv Area:             65.060864
+  Total Buffer Area:             4.07
+  Total Inverter Area:          60.99
   Macro/Black Box Area:      0.000000
-  Net Area:                681.268250
-  Net XLength        :        6511.78
-  Net YLength        :        6537.85
+  Net Area:                724.180546
+  Net XLength        :        6930.79
+  Net YLength        :        6101.52
   -----------------------------------
-  Cell Area:              3017.960057
-  Design Area:            3699.228307
-  Net Length        :        13049.63
+  Cell Area:              2989.241784
+  Design Area:            3713.422331
+  Net Length        :        13032.30
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:           928
+  Total Number of Nets:           908
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -68,10 +72,10 @@ Date   : Wed Feb  8 09:32:32 2023
   -----------------------------------------
   Resource Sharing:                    0.00
   Logic Optimization:                  0.00
-  Mapping Optimization:                0.71
+  Mapping Optimization:                0.91
   -----------------------------------------
-  Overall Compile Time:                0.80
-  Overall Compile Wall Clock Time:     1.10
+  Overall Compile Time:                1.06
+  Overall Compile Wall Clock Time:     1.58
 
   --------------------------------------------------------------------
 

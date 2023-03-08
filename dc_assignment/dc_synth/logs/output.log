@@ -1,0 +1,266 @@
+Initializing gui preferences from file  /home/njs82@drexel.edu/.synopsys_dv_prefs.tcl
+###### DC Synth Script #######
+#
+lappend search_path ../src
+. /opt/synopsys/2016/core-synthesis-tools/libraries/syn /opt/synopsys/2016/core-synthesis-tools/minpower/syn /opt/synopsys/2016/core-synthesis-tools/dw/syn_ver /opt/synopsys/2016/core-synthesis-tools/dw/sim_ver ../src
+define_design_lib WORK -path "work"
+1
+source ../set_env.tcl
+./logs/output.log
+## read the verilog files
+analyze -format verilog fifo.v
+Running PRESTO HDLC
+Compiling source file ../src/fifo.v
+Presto compilation completed successfully.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db'
+1
+elaborate -architecture verilog FIFO
+Loading db file '/opt/synopsys/2016/core-synthesis-tools/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/2016/core-synthesis-tools/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'saed32rvt_ss0p95vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src/fifo.v:169: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../src/fifo.v:191: signed to unsigned conversion occurs. (VER-318)
+
+Inferred memory devices in process
+        in routine FIFO line 69 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rd_ptr_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     wr_ptr_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    fcounter_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO line 110 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    F_EmptyN_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO line 134 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    F_FirstN_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO line 159 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    F_SLastN_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO line 183 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     F_LastN_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine FIFO line 207 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     F_FullN_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FIFO'.
+Information: Building the design 'FIFO_MEM_BLK'. (HDL-193)
+
+Inferred memory devices in process
+        in routine FIFO_MEM_BLK line 260 in file
+                '../src/fifo.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      FIFO_reg       | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| FIFO_MEM_BLK/259 |   4    |   32    |      2       |
+======================================================
+Presto compilation completed successfully.
+1
+link
+
+  Linking design 'FIFO'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed32rvt_ss0p95v125c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32rvt_ss0p95vn40c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db
+
+1
+#create_clock Clk -name ideal_clock1 -period 15.2
+create_clock Clk -name ideal_clock1 -period 15.2
+1
+set_input_delay 0.1 [ remove_from_collection [all_inputs] Clk ] -clock ideal_clock1 
+1
+set_output_delay 0.1 [ all_outputs ] -clock ideal_clock1
+1
+set_clock_uncertainty 0.1 ideal_clock1
+1
+set_max_area 0
+1
+set_load 0.2 [ all_outputs ]
+1
+check_design > reports/synth_check_design.rpt
+check_timing > reports/synth_check_timing.rpt
+uniquify > reports/synth_uniquify.rpt
+# I think it's actuall supposed to be this
+#set_timing_derate -early 0.85
+#set_timing_derate -late 1.05
+#set_timing_derate -early 0.15
+#set_timing_derate -late 0.05
+compile -area_effort medium -map_effort medium
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | M-2016.12-DWBB_201612.1 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 34 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FIFO_MEM_BLK'
+  Processing 'FIFO'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'FIFO_DW01_dec_0'
+  Processing 'FIFO_DW01_inc_0'
+  Processing 'FIFO_DW01_inc_1'
+  Processing 'FIFO_DW01_inc_2'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    3759.8      0.00       0.0       0.0                          
+    0:00:03    3759.8      0.00       0.0       0.0                          
+    0:00:03    3759.8      0.00       0.0       0.0                          
+    0:00:03    3759.8      0.00       0.0       0.0                          
+    0:00:03    3759.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3086.8      0.00       0.0       0.0                          
+    0:00:04    3076.7      0.00       0.0       0.0                          
+    0:00:04    3070.8      0.00       0.0       0.0                          
+    0:00:04    3069.6      0.00       0.0       0.0                          
+    0:00:04    3068.3      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3067.0      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+    0:00:04    3052.5      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+report_area > reports/synth_area.rpt
+report_power > reports/synth_power.rpt
+report_qor > reports/synth_qor.rpt
+report_cell > reports/synth_cells.rpt
+report_resource > reports/synth_resources.rpt
+report_timing > reports/timing_overview.rpt
+## Analysis reports
+report_timing -from [all_inputs] -max_paths 20 -to [all_registers -data_pins] > reports/timing.rpt
+report_timing -from [all_register -clock_pins] -max_paths 20 -to [all_registers -data_pins]  >> reports/timing.rpt
+report_timing -from [all_registers -clock_pins] -max_paths 20 -to [all_outputs] >> reports/timing.rpt
+report_timing -from [all_inputs] -to [all_outputs] -max_paths 20 >> reports/timing.rpt
+report_timing -from [all_registers -clock_pins] -to [all_registers -data_pins] -delay_type max  >> reports/timing.rpt
+report_timing -from [all_registers -clock_pins] -to [all_registers -data_pins] -delay_type min  >> reports/timing.rpt
+report_timing -transition_time -capacitance -nets -input_pins -from [all_registers -clock_pins] -to [all_registers -data_pins]  > reports/timing.tran.cap.rpt
+write_sdc const/fifo.sdc
+1
+write -hier -f verilog -output output/fifo.v
+Writing verilog file '/home/njs82@drexel.edu/ECEC574/dc_synth/output/fifo.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+write -hier -f ddc -output output/fifo.ddc
+Writing ddc file 'output/fifo.ddc'.
+1
+#exit
+dc_shell> exit
+
+Thank you...
+

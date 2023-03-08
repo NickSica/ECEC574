@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -max_delay
+        -min_delay
+        -max_capacitance
+        -max_transition
+Design : FIFO
+Version: Q-2019.12
+Date   : Wed Mar  8 10:28:07 2023
+****************************************
+
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+This design has no violated constraints.
+
+1

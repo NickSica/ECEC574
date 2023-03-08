@@ -1,0 +1,26 @@
+-------------------------------------------------------
+
+PrimeTime save_session README file
+
+-------------------------------------------------------
+
+PrimeTime Version: 
+	L-2016.06-SP3-1 for linux64 -- Jan 12, 2017
+Save Session Date:
+	Wed Feb  1 13:03:02 2023
+ 
+-------------------------------------------------------
+
+Command log of this session is saved in "cmd_log".
+If the saved session is moved to a different location, 
+    please update the paths in the cmd_log file accordingly, 
+    in order to use the GCA in-design flow.
+-------------------------------------------------------
+
+Current Design: FIFO
+
+Technology librares referenced by this session:
+/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db     saed32rvt_ss0p95v25c.db
+/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db     saed32rvt_ss0p95v125c.db
+/mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db     saed32rvt_ss0p95vn40c.db
+-------------------------------------------------------

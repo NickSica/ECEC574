@@ -1,0 +1,51 @@
+Information: Using automatic max wire load selection group 'predcaps'. (ENV-003)
+Information: Using automatic min wire load selection group 'predcaps'. (ENV-003)
+****************************************
+Report : qor
+Design : s386
+Version: L-2016.06-SP3-1
+Date   : Mon Mar  6 15:52:28 2023
+****************************************
+
+  Timing Path Group 'ideal_clock1' (max_delay/setup)
+  ---------------------------------------------
+  Levels of Logic:                            4
+  Critical Path Length:                    3.93
+  Critical Path Slack:                     4.02
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Timing Path Group 'ideal_clock1' (min_delay/hold)
+  ---------------------------------------------
+  Levels of Logic:                            3
+  Critical Path Length:                    0.87
+  Critical Path Slack:                     0.42
+  Total Negative Slack:                    0.00
+  No. of Violating Paths:                     0
+  ---------------------------------------------
+
+  Cell Count
+  ---------------------------------------------
+  Hierarchical Cell Count:                    0
+  Hierarchical Port Count:                    0
+  Leaf Cell Count:                           64
+  ---------------------------------------------
+
+
+  Area
+  ---------------------------------------------
+  Net Interconnect area:                  19.27
+  Total cell area:                       165.96
+  Design Area:                           185.22
+  Area Cost:                            -185.22
+  ---------------------------------------------
+
+
+  Design Rule Violations
+  ---------------------------------------------
+  Total No. of Pins in Design:              255
+  Total DRC Cost:                          0.00
+  ---------------------------------------------
+
+1

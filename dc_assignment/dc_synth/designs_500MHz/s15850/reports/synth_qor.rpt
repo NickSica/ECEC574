@@ -1,0 +1,84 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : qor
+Design : s15850
+Version: M-2016.12-SP1
+Date   : Wed Mar  1 10:36:06 2023
+****************************************
+
+
+  Timing Path Group 'ideal_clock1'
+  -----------------------------------
+  Levels of Logic:              17.00
+  Critical Path Length:          2.05
+  Critical Path Slack:          -4.10
+  Critical Path Clk Period:      2.00
+  Total Negative Slack:      -1149.54
+  No. of Violating Paths:      607.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:        534
+  Hierarchical Port Count:       1602
+  Leaf Cell Count:               2559
+  Buf/Inv Cell Count:             644
+  Buf Cell Count:                 117
+  Inv Cell Count:                 527
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2025
+  Sequential Cell Count:          534
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     4585.011954
+  Noncombinational Area:  3528.535412
+  Buf/Inv Area:            937.283087
+  Total Buffer Area:           237.88
+  Total Inverter Area:         699.40
+  Macro/Black Box Area:      0.000000
+  Net Area:               1514.080305
+  -----------------------------------
+  Cell Area:              8113.547366
+  Design Area:            9627.627671
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2638
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: xunil-03.coe.drexel.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.02
+  Logic Optimization:                 12.72
+  Mapping Optimization:               20.86
+  -----------------------------------------
+  Overall Compile Time:               36.67
+  Overall Compile Wall Clock Time:    36.97
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 4.10  TNS: 1149.54  Number of Violating Paths: 607
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
