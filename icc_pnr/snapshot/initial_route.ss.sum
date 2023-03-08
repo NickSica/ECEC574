@@ -2,7 +2,7 @@
 Report          : create_qor_snapshot (initial_route)
 Design          : FIFO
 Version         : Q-2019.12
-Date            : Wed Mar  8 10:28:07 2023
+Date            : Wed Mar  8 11:07:34 2023
 Time unit       : 1.0e-09 Second(ns)
 Capacitance unit: 1.0e-15 Farad(fF)
 Voltage unit    : 1 Volt
@@ -14,7 +14,7 @@ No. of scenario = 1
 WNS of each timing group:                
 --------------------------------------------------
 --------------------------------------------------
-Setup WNS:                                  12.267 
+Setup WNS:                                  12.153 
 Setup TNS:                                     0.0
 Number of setup violations:                      0  
 Hold WNS:                                    0.000  
@@ -23,13 +23,13 @@ Number of hold violations:                       0
 Number of max trans violations:                  0  
 Number of max cap violations:                    0  
 Number of min pulse width violations:            0  
-Route drc violations:                            0
+Route drc violations:                         2531
 --------------------------------------------------
 Area:                                         2989
 Cell count:                                    775
 Buf/inv cell count:                             50
 Std cell utilization:                       58.91%
-CPU/ELAPSE(hr):                          0.01/0.02
+CPU/ELAPSE(hr):                          0.62/0.63
 Mem(Mb):                                       463
 Host name:                               xunil-03.coe.drexel.edu
 --------------------------------------------------

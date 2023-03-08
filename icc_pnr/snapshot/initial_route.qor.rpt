@@ -1,17 +1,52 @@
+
+  Loading design 'FIFO'
+
+
+
+
+Information: Library Manufacturing Grid(GridResolution) : 1
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Warning: Mismatch in the main library and the Milkyway library resistance units. In the main library it is 1000.000 kohm and in the Milkyway design library it is 1.000 kohm. Check and correct the resistance units in the .tf and .db files. (PSYN-476)
+Information: Capacitance Unit from Milkyway design library: 'ff' 
+Information: Design Library and main library capacitance units are matched - 0.001 pf. 
+Warning: Inconsistent library data found for layer PO. (RCEX-018)
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is detail route TLU+. (RCEX-015)
+Information: Start mixed mode parasitic extraction. (RCEX-023)
+Information: Start rc extraction...
+Information: Parasitic source is LPE. (RCEX-040)
+Information: Parasitic mode is RealRC. (RCEX-041)
+Information: Using virtual shield extraction. (RCEX-081)
+Information: Extraction mode is MIN_MAX. (RCEX-042)
+Information: Extraction derate is 125/125/125. (RCEX-043)
+Information: Coupling capacitances are lumped to ground. (RCEX-044)
+Information: Start back annotation for parasitic extraction. (RCEX-023)
+Information: End back annotation for parasitic extraction. (RCEX-023)
+Information: Start timing update for parasitic extraction. (RCEX-023)
+Information: End timing update for parasitic extraction. (RCEX-023)
+Information: End parasitic extraction. (RCEX-023)
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'ideal_clock1' will be added to the clock's propagated skew. (TIM-112)
+Information: Using CCS timing info. (TIM-025)
+Warning: Extrapolations far outside the librarycharacterization range have been detected 4 times during delay calculation. (RCCALC-014)
  
 ****************************************
 Report : qor
 Design : FIFO
 Version: Q-2019.12
-Date   : Wed Mar  8 10:28:07 2023
+Date   : Wed Mar  8 11:07:33 2023
 ****************************************
 
 
   Timing Path Group 'ideal_clock1'
   -----------------------------------
   Levels of Logic:             32.000
-  Critical Path Length:         2.762
-  Critical Path Slack:         12.267
+  Critical Path Length:         2.874
+  Critical Path Slack:         12.153
   Critical Path Clk Period:    15.200
   Total Negative Slack:         0.000
   No. of Violating Paths:       0.000
@@ -45,12 +80,12 @@ Date   : Wed Mar  8 10:28:07 2023
   Total Inverter Area:         60.995
   Macro/Black Box Area:         0.000
   Net Area:                   724.181
-  Net XLength        :       6930.790
-  Net YLength        :       6101.515
+  Net XLength        :       7103.215
+  Net YLength        :       6967.028
   -----------------------------------
   Cell Area:                 2989.242
   Design Area:               3713.422
-  Net Length        :       13032.305
+  Net Length        :       14070.242
 
 
   Design Rules
@@ -68,10 +103,10 @@ Date   : Wed Mar  8 10:28:07 2023
   -----------------------------------------
   Resource Sharing:                   0.000
   Logic Optimization:                 0.000
-  Mapping Optimization:               1.017
+  Mapping Optimization:               0.914
   -----------------------------------------
-  Overall Compile Time:               1.155
-  Overall Compile Wall Clock Time:    1.712
+  Overall Compile Time:               1.062
+  Overall Compile Wall Clock Time:    1.583
 
   --------------------------------------------------------------------
 

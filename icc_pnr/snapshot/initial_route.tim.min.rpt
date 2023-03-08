@@ -13,21 +13,23 @@ Report : timing
         -capacitance
 Design : FIFO
 Version: Q-2019.12
-Date   : Wed Mar  8 10:28:07 2023
+Date   : Wed Mar  8 11:07:34 2023
 ****************************************
 
  * Some/all delay information is back-annotated.
 
 Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
 	Parasitic source    : LPE
-	Parasitic mode      : RealRVirtualC
+	Parasitic mode      : RealRC
 	Extraction mode     : MIN_MAX
 	Extraction derating : 125/125/125
 
-Information: Percent of Arnoldi-based delays =  6.94%
+Information: Percent of Arnoldi-based delays = 14.82%
 
-  Startpoint: FClrN (input port clocked by ideal_clock1)
-  Endpoint: F_FirstN_reg
+Information: Percent of CCS-based delays =  1.24%
+
+  Startpoint: FOutN (input port clocked by ideal_clock1)
+  Endpoint: F_FullN_reg
             (rising edge-triggered flip-flop clocked by ideal_clock1)
   Path Group: ideal_clock1
   Path Type: min
@@ -43,28 +45,28 @@ Attributes:
   --------------------------------------------------------------------------------------------------------------------------------------------------
   clock ideal_clock1 (rise edge)                                                             0.000      0.000
   clock network delay (ideal)                                                                0.000      0.000
-  input external delay                                                                       0.100      0.100 r
-  FClrN (in)                                                  0.000                          0.000      0.100 r    ( 0.00,37.33)
-  FClrN (net)                   10       10.045                                              0.000      0.100 r    [6.46,10.05]
-  U294/A1 (NAND2X0_RVT)                             0.000     0.001     0.000                0.001 *    0.101 r    (20.02,12.28)
-  U294/Y (NAND2X0_RVT)                                        0.035                          0.028      0.129 f    (19.92,12.37)
-  n77 (net)                      1        0.899                                              0.000      0.129 f    [0.40,0.90]
-  F_FirstN_reg/D (DFFASX1_RVT)                      0.000     0.035     0.000                0.000 *    0.129 f    (22.90,10.66)
-  data arrival time                                                                                     0.129
+  input external delay                                                                       0.100      0.100 f
+  FOutN (in)                                                  0.000                          0.000 @    0.100 f    ( 0.00,27.30)
+  FOutN (net)                    4        5.155                                              0.000      0.100 f    [3.46,5.16]
+  U292/A1 (NAND3X0_RVT)                             0.000     0.000     0.000                0.000 @    0.100 f    (11.66,20.79)
+  U292/Y (NAND3X0_RVT)                                        0.030                          0.022      0.122 r    (11.67,20.99)
+  n79 (net)                      1        0.924                                              0.000      0.122 r    [0.42,0.92]
+  F_FullN_reg/D (DFFASX1_RVT)                       0.000     0.030     0.000                0.000 &    0.122 r    (10.32,19.37)
+  data arrival time                                                                                     0.122
 
   clock ideal_clock1 (rise edge)                                                             0.000      0.000
   Clk (in)                                                    0.000                          0.000 @    0.000 r    ( 0.00,47.67)
-  Clk (net)                    229      235.451                                              0.000      0.000 r    [95.02,235.45]         d 
-  F_FirstN_reg/CLK (DFFASX1_RVT)                    0.000     0.017     0.000                0.004 @    0.004 r    (22.58,11.50)
+  Clk (net)                    229      236.612                                              0.000      0.000 r    [96.18,236.61]         d 
+  F_FullN_reg/CLK (DFFASX1_RVT)                     0.000     0.017     0.000                0.004 @    0.004 r    (10.64,18.53)
   clock uncertainty                                                                          0.100      0.104
-  F_FirstN_reg/CLK (DFFASX1_RVT)                                                             0.000      0.104 r
-  library hold time                                                                         -0.016      0.088
-  data required time                                                                                    0.088
+  F_FullN_reg/CLK (DFFASX1_RVT)                                                              0.000      0.104 r
+  library hold time                                                                         -0.030      0.074
+  data required time                                                                                    0.074
   --------------------------------------------------------------------------------------------------------------------------------------------------
-  data required time                                                                                    0.088
-  data arrival time                                                                                    -0.129
+  data required time                                                                                    0.074
+  data arrival time                                                                                    -0.122
   --------------------------------------------------------------------------------------------------------------------------------------------------
-  slack (MET)                                                                                           0.041
+  slack (MET)                                                                                           0.048
 
 
 1

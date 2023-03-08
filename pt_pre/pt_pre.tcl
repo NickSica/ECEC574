@@ -4,6 +4,9 @@ lappend search_path ../dc_synth/output
 
 source ../set_env.tcl
 
+file mkdir reports
+file mkdir output
+
 ## read the verilog files
 read_verilog fifo.v
 

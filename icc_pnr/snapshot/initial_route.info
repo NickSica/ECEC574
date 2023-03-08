@@ -30,8 +30,8 @@ BUFFER:
 END_BUFFER
 CEL_INFO:
 cname FIFO
-cver 10
-ctime 1678289237
+cver 11
+ctime 1678289381
 csize 1429
 sname ""
 sver 0

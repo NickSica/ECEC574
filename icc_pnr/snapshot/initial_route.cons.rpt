@@ -8,11 +8,11 @@ Report : constraint
         -max_transition
 Design : FIFO
 Version: Q-2019.12
-Date   : Wed Mar  8 10:28:07 2023
+Date   : Wed Mar  8 11:07:34 2023
 ****************************************
 
 	Parasitic source    : LPE
-	Parasitic mode      : RealRVirtualC
+	Parasitic mode      : RealRC
 	Extraction mode     : MIN_MAX
 	Extraction derating : 125/125/125
 This design has no violated constraints.

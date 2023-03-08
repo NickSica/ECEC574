@@ -1,3 +1,0 @@
-set_object_boundary -boundary {  { 33.5600 64.3400 } { 43.8960 64.3400 } { 43.8960 34.2440 } { 33.5600 34.2440 } } [get_plan_groups { sub_94 } ]
-set_object_boundary -boundary {  { 55.9040 64.3400 } { 101.9600 64.3400 } { 101.9600 10.8360 } { 55.9040 10.8360 } } [get_plan_groups { memblk } ]
-
