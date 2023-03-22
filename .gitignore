@@ -11,7 +11,6 @@ logs
 *.mr
 *.pvl
 *.syn
-table.tex
 clog*
 feas_cell_history
 feas_cell_history.*

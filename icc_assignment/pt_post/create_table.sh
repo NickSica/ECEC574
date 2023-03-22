@@ -17,10 +17,10 @@ echo "\\begin{table}" >> table.tex
 echo "\\centering" >> table.tex
 echo "\\caption{Pre-layout and Post-layout simulation results.}" >> table.tex
 echo "\\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|c| }" >> table.tex
-echo "    \\hline" >> table.tex
-echo "    \\multirow{2}{*}{Design} & \multicolumn{5}{|c|}{Pre-Layout Results} & \multicolumn{6}{|c|}{Post-Layout Results} \\" >> table.tex
+echo "    \\hline \\" >> table.tex
+echo "    \\multirow{2}{*}{Design} & \\multicolumn{5}{|c|}{Pre-Layout Results} & \\multicolumn{6}{|c|}{Post-Layout Results} \\\\" >> table.tex
 echo "    \\cline{2-12}" >> table.tex
-echo "    & Area & Power & WNS & TNS & Cell Count & Area & Power & WNS & TNS & Cell Count & DRC \\" >> table.tex
+echo "    & Area & Power & WNS & TNS & Cell Count & Area & Power & WNS & TNS & Cell Count & DRC \\\\" >> table.tex
 echo "    \\hline" >> table.tex
 
 for top in $TOP_LIST; do
@@ -36,6 +36,28 @@ for top in $TOP_LIST; do
 	power="$(sed -n 'x;$p' $icc_report_dir/extracted_power.rpt | gawk -- '{ print $(NF-1) }')"
 	echo "    "$output"& $area & $power & $wns & $tns & $cell_count & $drc \\\\" >> table.tex
 	echo "    \\hline" >> table.tex
+
+	source <(gawk -f get_values.awk $icc_report_dir/extracted_clock_tree.rpt)
+	clock_sinks=$clock_sinks" $sinks & $buffs & $skew \\\\\n"
+done
+echo "\\end{tabular}" >> table.tex
+echo "\\end{table}" >> table.tex
+echo "" >> table.tex
+
+echo "\\begin{table}" >> table.tex
+echo "\\centering" >> table.tex
+echo "\\caption{Clock information.}" >> table.tex
+echo "\\begin{tabular}{ |c|c|c|c| }" >> table.tex
+echo "    \\hline \\" >> table.tex
+echo "    Design & \\# Clock Sinks & \\# Clock Buffers & Global Clock Skew \\\\" >> table.tex
+echo "    \\hline" >> table.tex
+
+for top in $TOP_LIST; do
+	post_report_dir=reports/$top
+	icc_report_dir=../icc_pnr/$post_report_dir
+
+	source <(gawk -f get_clk_info.awk $icc_report_dir/extracted_clock_tree.rpt)
+	echo "    ${top}.v & $sinks & $buffs & $skew \\\\" >> table.tex
 done
 echo "\\end{tabular}" >> table.tex
 echo "\\end{table}" >> table.tex
