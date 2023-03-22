@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[left=0.5in, right=0.5in, top=0.75in, bottom=0.75in]{geometry}
+\usepackage{multirow}
+
+\title{IC Compiler Assignment}
+\author{Nicholas Sica}
+\date{March 22, 2023}
+
+\begin{document}
+\maketitle
+
+There was not much done in terms of optimizing or constraining the area and
+power. The only additional constraint for area was setting the max area to zero
+to get a minimum area design. One oddity I noted while running the scripts is
+the fact that the verify\_zrt\_route command reported violations while the
+quality of results report reported no violations. After discussion, I decided
+the quality of results report was more trustworthy. The overall trend for the
+individual tables is for the numbers to increase in magnitude as the designs get
+more complex. When it comes to comparing the pre-layout and post-layout results,
+that is where it gets a bit interesting. In some cases, the cell count changed
+which shows how the different steps in compiling the circuit ended up adding or
+removing cells. This allowed for the worst negative slack and total negative
+slack to end up in a good place where previously they would be failing. It is
+also interesting how the biggest design ended up with a bigger area despite
+having overall less cells. One possible explanation for that is the routing
+taking up more area than expected. Power numbers seem relatively the same as
+they were before except in the two largest designs. The clock skew is also below
+100ps on all of the designs with the highest being 0.0347ns or 34.7ps. The clock
+buffers are non-existent for the most of the designs except the two biggest
+while each design has 3-4x more clock sinks than the previous design above it.
+
+Overall, this was a success with no design rule check violations, no slack
+errors, and designs that looked good when inspected in the GUI. If I had more
+time to do some testing, I would try it with the faster clock frequency that we
+were having issues with and try to make the best version of the design I
+could. To run the scripts, the bash files provided in the respective directories
+will run each design. If you run it manually it will only run the design
+specified in the set\_env.tcl file. The output directories are under their
+respective folders(reports for all the different reports, output for the
+extracted designs, etc) with a folder for each design.
+
+
+\begin{table}[h]
+\centering
+\caption{Pre-layout and post-layout simulation results.}
+\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|c| }
+    \hline
+    \multirow{2}{*}{Design} & \multicolumn{5}{|c|}{Pre-Layout Results} & \multicolumn{6}{|c|}{Post-Layout Results} \\
+    \cline{2-12}
+    & Area & Power & WNS & TNS & Cell Count & Area & Power & WNS & TNS & Cell Count & DRC \\
+    \hline
+    s386.v & 185.22 & 5.6739 & 0.42 & 0.00 & 64 & 185.22 & 5.8457 & 0.24 & 0.00 & 64 & 0 \\
+    \hline
+    s1238.v & 1007.51 & 29.4925 & -0.03 & -0.06 & 368 & 959.66 & 29.1348 & 0.17 & 0.00 & 342 & 0 \\
+    \hline
+    s9234.v & 1994.45 & 45.0913 & 0.09 & 0.00 & 495 & 1993.57 & 45.9801 & 0.10 & 0.00 & 493 & 0 \\
+    \hline
+    s15850.v & 6878.56 & 157.3402 & -0.06 & -1.26 & 1652 & 6870.20 & 220.3384 & 0.12 & 0.00 & 1666 & 0 \\
+    \hline
+    s35932.v & 24807.70 & 537.0980 & -0.04 & -0.39 & 5002 & 25783.95 & 794.4180 & 0.17 & 0.00 & 4887 & 0 \\
+    \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Clock information.}
+\begin{tabular}{ |c|c|c|c| }
+    \hline
+    Design & \# Clock Sinks & \# Clock Buffers & Global Clock Skew \\
+    \hline
+    s386.v & 6 & 0 & 0.0001 \\
+    \hline
+    s1238.v & 18 & 0 & 0.0007 \\
+    \hline
+    s9234.v & 125 & 0 & 0.0072 \\
+    \hline
+    s15850.v & 442 & 75 & 0.0439 \\
+    \hline
+    s35932.v & 1728 & 81 & 0.0347 \\
+    \hline
+\end{tabular}
+\end{table}
+
+\end{document}

@@ -58,6 +58,7 @@ for top in $TOP_LIST; do
 
 	source <(gawk -f get_clk_info.awk $icc_report_dir/extracted_clock_tree.rpt)
 	echo "    ${top}.v & $sinks & $buffs & $skew \\\\" >> table.tex
+	echo "    \\hline" >> table.tex
 done
 echo "\\end{tabular}" >> table.tex
 echo "\\end{table}" >> table.tex
