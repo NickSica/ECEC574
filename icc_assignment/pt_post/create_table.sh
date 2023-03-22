@@ -17,7 +17,7 @@ echo "\\begin{table}" >> table.tex
 echo "\\centering" >> table.tex
 echo "\\caption{Pre-layout and Post-layout simulation results.}" >> table.tex
 echo "\\begin{tabular}{ |c|c|c|c|c|c|c|c|c|c|c|c|c| }" >> table.tex
-echo "    \\hline \\" >> table.tex
+echo "    \\hline" >> table.tex
 echo "    \\multirow{2}{*}{Design} & \\multicolumn{5}{|c|}{Pre-Layout Results} & \\multicolumn{6}{|c|}{Post-Layout Results} \\\\" >> table.tex
 echo "    \\cline{2-12}" >> table.tex
 echo "    & Area & Power & WNS & TNS & Cell Count & Area & Power & WNS & TNS & Cell Count & DRC \\\\" >> table.tex
@@ -48,7 +48,7 @@ echo "\\begin{table}" >> table.tex
 echo "\\centering" >> table.tex
 echo "\\caption{Clock information.}" >> table.tex
 echo "\\begin{tabular}{ |c|c|c|c| }" >> table.tex
-echo "    \\hline \\" >> table.tex
+echo "    \\hline" >> table.tex
 echo "    Design & \\# Clock Sinks & \\# Clock Buffers & Global Clock Skew \\\\" >> table.tex
 echo "    \\hline" >> table.tex
 
